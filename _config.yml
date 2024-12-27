@@ -1,13 +1,13 @@
 # Jekyll configuration
-url: https://masilotti.com
-title: Masilotti.com
+url: https://bagusaji.com
+title: Bagus Aji Santoso
 description:
 author:
-  name: Joe Masilotti
-  email: joe@masilotti.com
-  twitter: joemasilotti
-  github: joemasilotti
-  linkedin: joemasilotti
+  name: Bagus Aji Santoso
+  email: gusajisan@gmail.com
+  twitter: gusajisan
+  github: gusajisan
+  linkedin: gusajisan
 exclude:
   - README.md
   - package-lock.json
