@@ -1,7 +1,7 @@
 - name: email
-  handle: gusajisantoso@gmail.com
+  handle: bagus@bagusaji.com
   title: Email Bagus
-  href: mailto:gusajisantoso@gmail.com
+  href: mailto:bagus@bagusaji.com
   icon: solid/envelope.svg
 
 - name: twitter
