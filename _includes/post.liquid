@@ -15,7 +15,7 @@ Renders a summary card for an article or other content.
 {% endif %}
 
 {% assign title = include.title | default: include.post.title %}
-{% assign cta = include.cta | default: "Read article" %}
+{% assign cta = include.cta | default: "Baca artikel" %}
 
 {% if include.date %}
   {% assign datetime = include.post.date | date: "%Y-%m-%d" %}
