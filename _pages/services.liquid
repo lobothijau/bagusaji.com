@@ -1,20 +1,24 @@
 ---
 title: Services
-description: I've been working with Hotwire Native since 2015. Since then I've helped half a dozen businesses launch and consulted for twice as many. Here's how I can help you bring your Rails app to iOS and Android with Hotwire Native.
+description: I've been building mobile and web applications professionally since 2015. Since then a many web application are release and numerous of mobile apps are released to both Play Store and App Store.
 layout: simple
-layout_title: Need a hand with Hotwire Native?<br>I'd love to help.
+layout_title: Ready to bring your ideas into reality?
 ---
 
-{% comment %} <div class="-mt-12 sm:-mt-[56px]"> {% endcomment %}
 <div class="-mt-16 sm:-mt-20">
-  <a href="mailto:joe@masilotti.com" class="button button-primary button-lg flex mt-4">
-    {% svg /assets/icons/mini/envelope.svg class="-ml-0.5 h-5 w-5" %}
-    Email Joe
-  </a>
+    <a href="https://wa.me/6281234567890" target="_blank" class="button bg-green-700 text-white font-semibold button-lg flex">
+        {% svg /assets/images/icons/mini/whatsapp.svg class="-ml-0.5 h-5 w-5 text-white" fill="white" %}
+        Chat on WhatsApp
+    </a>
+
+    <a href="mailto:bagus@bagusaji.com" class="button button-primary button-lg flex mt-4">
+        {% svg /assets/images/icons/outline/envelope.svg class="-ml-0.5 h-5 w-5 text-white" %}
+        Email Bagus
+    </a>
 </div>
 
 <ul class="flex max-w-xl flex-col space-y-16 mt-16">
-  {% for service in site.data.services %}
+    {% for service in site.data.services %}
     {% include service.liquid service=service %}
-  {% endfor %}
+    {% endfor %}
 </ul>

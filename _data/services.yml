@@ -1,39 +1,28 @@
-- title: Zero to App Store
-  best_if: you need brand new Hotwire Native apps and want me to do everything.
-  you_get: a developer (me!) to build your iOS and Android apps and launch them.
-  cta: Email Joe to get started
+- title: Zero to Production
+  best_if: you need a brand new app and want me to do everything.
+  you_get: a developer (me) to build your app and release it to public.
+  cta: Chat with Bagus to get started
   description: |
-    I write all of the native Swift/Kotlin code and Rails integration needed. We can
-    integrate with native Apple/Android SDKs, too. I work with your designers and
-    developers to teach and apply the best practices I've accumulated working
-    with the framework for 10+ years.
+    I write your mobile app with the techology of choice. The app will be 
+    integrated with your already built backend APIs or we can also build 
+    the web from scratch.
+  href: https://wa.me/6281234567890
 
-- title: Private custom workshop
-  best_if: you want to level up your team to write Hotwire Native apps on their own.
-  you_get: a custom workshop tailored to your team's unique needs and skill level.
-  cta: Email Joe to get started
+- title: Maintenance and support
+  best_if: you need a maintenance and support for your app.
+  you_get: a developer (me) to maintain and support your app.
+  cta: Chat with Bagus to get started
   description: |
-    Workshops can range from virtual, half-day sessions to in-person, multi-day
-    events.  They can cover Swift/Kotlin syntax, dive right into the Hotwire
-    Native integration, or skip ahead to best practices in building scalable
-    hybrid apps with small teams.
+    I will maintain and support your app. I will also help you to fix bugs 
+    and adding new features or improvements.
+  href: https://wa.me/6281234567890
 
-- title: Monthly advisory retainer
-  best_if: you want to write the code yourself but need an expert to guide you.
-  you_get: unlimited access to me via phone, email, and/or Zoom.
-  cta: Email Joe to get started
+- title: Private training / workshop
+  best_if: you want to learn mobile application development
+  you_get: a custom workshop tailored to your unique needs
+  cta: Plan a training with Bagus
   description: |
-    Use our time to get advice on best practices, receive technical overviews of
-    topics, or even to dive into your Hotwire Native code. I return all messages
-    no later than the next business day. Meetings must be scheduled in advance.
-
-- title: Pair with Joe
-  price: $499 for a 90 minute pairing session
-  best_if: you have specific questions on your Hotwire Native app.
-  you_get: a hands-on pairing session with a Hotwire Native expert.
-  href: https://savvycal.com/joemasilotti/pair
-  cta: Schedule a meeting
-  description: |
-    A private 90-minute pairing session with me. Use our time to dive into a
-    specific question or problem you're having with your Hotwire Native app.
-    Limited to one session per month per individual/business.
+    Workshops can be arranged as virtual or in-person trianing. It can be a 
+    half-day sessions of multi-day events. We will plan the syllabus for 
+    the sessions together. 
+  href: https://wa.me/6281234567890

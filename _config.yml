@@ -24,6 +24,9 @@ collections:
   hotwire:
     output: true
     permalink: /hotwire/edition-:title/
+  portfolios:
+    output: true
+    permalink: /portfolios/:title/
 defaults:
   - scope:
       path: _posts/
