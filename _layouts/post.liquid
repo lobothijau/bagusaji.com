@@ -4,7 +4,9 @@ layout: container
 
 <div class="xl:relative">
   <div class="mx-auto max-w-2xl">
-    <a href="{% if page.back %}{{ page.back }}{% else %}{% link _pages/articles.liquid %}{% endif %}" title="Go back to articles" aria-label="Go back to articles" class="hidden lg:flex group mb-8 h-10 w-10 items-center justify-center rounded-full bg-white shadow-md shadow-gray-800/5 ring-1 ring-gray-900/5 transition lg:absolute lg:-left-5 lg:mb-0 lg:mt-2 xl:top-2 xl:left-0 xl:mt-0">
+    <a href="{% if page.back %}{{ page.back }}{% endif %}" title="Go back to articles" aria-label="Go back to articles" class="hidden lg:flex group mb-8 h-10 w-10 items-center justify-center rounded-full bg-white shadow-md shadow-gray-800/5 ring-1 ring-gray-900/5 transition lg:absolute lg:-left-5 lg:mb-0 lg:mt-2 xl:top-2 xl:left-0 xl:mt-0">
+      <!-- Add this debug line temporarily -->
+      <!-- Debug: page.back = {{ page.back }} -->
       {% svg /assets/icons/micro/arrow_left.svg class="h-3 w-3 stroke-gray-500 transition group-hover:stroke-gray-700" %}
     </a>
     <article id="content" class="scroll-mt-8">

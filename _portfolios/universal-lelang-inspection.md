@@ -4,6 +4,7 @@ date: 2023-03-22
 description: |
   Universal Collection Inspection app digitalize car & bike inspection process with beautiful and friendly mobile forms.
 layout: post
+back: /portfolios
 ---
 
 <img src="/assets/images/portfolios/balai-lelang-form.webp" class="h-96 w-full object-cover"/>

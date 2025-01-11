@@ -4,6 +4,7 @@ date: 2023-03-27
 description: |
   VanHaven 3D Configurator let's user build custom transporter van in a web based 3D editor.
 layout: post
+back: /portfolios
 ---
 
 <img src="/assets/images/portfolios/vanhaven-2.webp" class="h-96 w-full object-cover"/>

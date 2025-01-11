@@ -5,6 +5,7 @@ description: |
   Buku Catur is an interactive chess book reader where user can use interactive board directly while reading the book. 
 permalink: /portfolios/buku-catur
 layout: post
+back: /portfolios
 ---
 
 <img src="/assets/images/portfolios/bukucatur-1.jpg" class="h-96 w-full object-cover"/>

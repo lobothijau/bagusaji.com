@@ -4,6 +4,7 @@ date: 2023-05-21
 description: |
   Jiten is an Android-based Japanese-Indonesian dictionary to help user browse words using katakana, hiragana, and kanji.
 layout: post
+back: /portfolios
 ---
 
 <img src="/assets/images/portfolios/jiten-1.jpg" class="h-96 w-full object-cover"/>

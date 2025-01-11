@@ -4,6 +4,7 @@ date: 2024-07-18
 description: |
   Hino-Connect is a fleet management app to monitor truck movement and other data. 
 layout: post
+back: /portfolios
 ---
 <img src="/assets/images/portfolios/hino-connect.jpeg" class="h-96 w-full object-cover"/>
 

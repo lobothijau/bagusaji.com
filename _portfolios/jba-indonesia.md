@@ -4,6 +4,7 @@ date: 2023-03-22
 description: |
   JBA Indonesia is a Flutter built project for Android and iOS to enable online auction right from your phone from all over Indonesia.
 layout: post
+back: /portfolios
 ---
 
 <img src="/assets/images/portfolios/jba-bidding.webp" class="h-96 w-full object-cover"/>

@@ -4,6 +4,7 @@ date: 2023-12-12
 description: |
   Fullstack web development for dispensingrobotics.com, an industrial based company with global customer.
 layout: post
+back: /portfolios
 ---
 
 <img src="/assets/images/portfolios/dispensingrobots.jpg" class="h-96 w-full object-cover"/>

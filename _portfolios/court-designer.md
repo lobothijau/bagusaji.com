@@ -4,6 +4,7 @@ date: 2024-04-01
 description: |
   3D Configurator web app using Three.js to design custom basketball court.
 layout: post
+back: /portfolios
 ---
 
 <img src="/assets/images/portfolios/court.jpg" class="h-96 w-full object-cover"/>

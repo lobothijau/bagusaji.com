@@ -4,10 +4,10 @@ title: Bagus Aji Santoso
 description:
 author:
   name: Bagus Aji Santoso
-  email: gusajisan@gmail.com
-  twitter: gusajisan
-  github: gusajisan
-  linkedin: gusajisan
+  email: bagus@bagusaji.com
+  twitter: bgusji
+  github: lobothijau
+  linkedin: baguzzzaji
 exclude:
   - README.md
   - package-lock.json
@@ -33,7 +33,7 @@ defaults:
       type: posts
     values:
       layout: post
-      back: _pages/articles.liquid
+      back: /articles
       preview_links_template_id: 999
   - scope:
       path: _posts/turbo-ios

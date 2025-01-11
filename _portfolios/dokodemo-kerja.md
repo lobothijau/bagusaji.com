@@ -4,6 +4,7 @@ date: 2023-03-21
 description: |
   Dokodemo-Kerja helping companies manage their employee's remote work record with a desktop and mobile app. 
 layout: post
+back: /portfolios
 ---
 
 <img src="/assets/images/portfolios/dokodemo-kerja-record.webp" class="h-96 w-full object-cover"/>

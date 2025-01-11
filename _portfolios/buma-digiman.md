@@ -4,6 +4,7 @@ date: 2023-03-21
 description: |
   Bukit Makmur Mandiri Utama Digiman is an Android only apps built with Kotlin to digitalized mining-vehicle inspection workflow.
 layout: post
+back: /portfolios
 ---
 
 <img src="/assets/images/portfolios/digiman-frontpage.webp" class="h-96 w-full object-cover"/>

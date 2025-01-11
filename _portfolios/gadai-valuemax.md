@@ -4,6 +4,7 @@ date: 2023-03-22
 description: |
   Gadai ValueMax is a Flutter built project for Android and iOS to help customer perform fiduciary from the comfort of their home. 
 layout: post
+back: /portfolios
 ---
 
 <img src="/assets/images/portfolios/gadai-front.webp" class="h-96 w-full object-cover"/>
