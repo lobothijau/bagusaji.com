@@ -3,7 +3,12 @@ title: Belajar Bahasa Pemrograman C
 date: 2024-03-21
 description: Artikel ini akan membahas tentang dasar-dasar bahasa pemrograman C dan menyiapkan development environment-nya.
 tags: c
+series: c
+series_title: Belajar Pemrograman C untuk Pemula
+index: 1
 ---
+
+{% include series.liquid %}
 
 Bahasa pemrograman C merupakan bahasa pemrograman  _general-purpose_  yang dibuat oleh Dennis Ritchie pada akhir 1960-1970an. Bahasa ini sering dipakai dalam pengembangan sistem operasi dan  _embedded system_. C juga sering dipakai sebagai pengganti bahasa pemrograman Assembly karena sintaksnya lebih mudah dan cukup efisien.
 
@@ -20,7 +25,7 @@ Bahasa C adalah  _compiled language_, artinya  _source code_  yang sudah ditulis
 
 Jika menggunakan Linux, cara termudah adalah dengan menggunakan gcc. Pada umumnya setiap distribusi Linux sudah memiliki gcc, namun jika tidak, maka jalankan perintah berikut:
 
-```
+```bash
 sudo apt install build-essential
 
 ```
@@ -29,7 +34,7 @@ Perintah di atas akan memasang  _gcc toolchain_  yang dapat dipakai untuk melaku
 
 Untuk mencobanya, buat sebuah file kosong dengan nama  `app.c`  lalu tulis kode berikut:
 
-```
+```c
 #include <stdio.h>
 int main(void)
 {
@@ -40,13 +45,13 @@ int main(void)
 
 Untuk melakukan proses kompilasi dengan gcc, jalankan perintah berikut di terminal:
 
-```
+```bash
 gcc app.c
 ```
 
 Perintah tersebut akan membuat sebuah file dengan nama  `a.out`  di folder yang sama. Jalankan program tersebut di terminal dengan perintah:
 
-```
+```bash     
 ./a.out
 ```
 
@@ -54,31 +59,31 @@ Perintah tersebut akan membuat sebuah file dengan nama  `a.out`  di folder yang 
 
 Alternatif lain selain gcc di Linux adalah clang. Pasang Clang di sistem Linux dengan perintah:
 
-```
+```bash
 sudo apt install clang
 ```
 
 Untuk memproses file  `app.c`  yang sebelumnya sudah kita buat, jalankan perintah berikut:
 
-```
+```bash
 clang app.c
 ```
 
 Sama seperti ketika menggunakan gcc, Clang juga akan membuat sebuah file bernama  `a.out`  yang bisa dieksekusi. Untuk melihat hasilnya, jalankan perintah berikut di terminal:
 
-```
+```bash
 ./a.out
 ```
 
 Kita bisa melakukan kompilasi dan menggunakan nama selain  `a.out`  dengan menambahkan flag  `-o`:
 
-```
+```bash
 gcc app.c -o myapp
 ```
 
 Untuk menjalankan aplikasi C yang sudah dikompilasi, jalankan:
 
-```
+```bash
 ./myapp
 ```
 

@@ -3,7 +3,11 @@ title: Jenis-jenis Tipe Data di SQLite
 date: 2024-03-24
 description: Artikel ini akan membahas tentang jenis-jenis tipe data yang dapat digunakan di sistem database SQLite.
 tags: sqlite
+series: sqlite
+series_title: Belajar SQLite untuk Pemula
 ---
+
+{% include series.liquid %}
 
 Sistem database lain seperti MySQL dan PostgreSQL menggunakan  _static typing_, artinya suatu kolom yang telah memiliki tipe data tertentu, tidak bisa menyimpan tipe data lain. Pada contoh di bawah, kolom  `quantity`  hanya bisa menyimpa bilangan bulat saja.
 

@@ -3,7 +3,12 @@ title: Komentar dalam Bahasa C
 date: 2024-03-25
 description: Artikel ini akan membahas tentang penggunaan komentar dalam bahasa pemrograman C.
 tags: c
+series: c   
+series_title: Belajar Pemrograman C untuk Pemula
+index: 3
 ---
+
+{% include series.liquid %}
 
 Saat menulis program C kita bisa memberikan komentar sebagai penjelasan tentang bagaimana cara kerja program tersebut. Setiap komentar tidak diproses oleh compiler karena tujuannya hanya agar dibaca oleh progarmmer.
 

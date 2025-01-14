@@ -3,7 +3,12 @@ title: Standar-standar Bahasa C
 date: 2024-03-27
 description: Artikel ini akan membahas standar-standar bahasa pemrograman C yang pernah dikembangkan.
 tags: c
+series: c
+series_title: Belajar Pemrograman C untuk Pemula
+index: 2
 ---
+
+{% include series.liquid %}
 
 Bahasa pemrograman C merupakan bahasa yang memiliki beberapa jenis standar. Standar yang paling umum adalah ANSI C dan yang terbaru adalah standar ISO/IEC:9989.
 
