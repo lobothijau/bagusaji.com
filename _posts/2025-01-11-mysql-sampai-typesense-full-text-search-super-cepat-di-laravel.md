@@ -3,7 +3,7 @@ title: "MySQL sampai Typesense: Full-Text Search Super Cepat di Laravel"
 date: 2025-01-11
 description: |
   Pencarian ada di mana-mana. Artikel ini membahas cara mengimplementasi fitur pencarian di Laravel dengan MySQL dan Typesense untuk membuat fitur pencarian yang super bagi pengguna.
-  tags: laravel, full-text search, typesense, mysql
+tags: laravel, full-text-search, typesense, mysql
 ---
 
 Pencarian ada di mana-mana, dari mencari SPBU, mencari tutorial di YouTube, atau mencari pesan lama disebuah chat. _in-app search_ memudahkan kita mencari apa yang kita mau.
@@ -20,7 +20,7 @@ Siap? Mari kita mulai!
 
 Bayangkan aplikasi _customer support_ dimana seorang anggaplah _customer service_ perlu mencari akun berdasarkan nama, email atau alamat. Hasil pencarian sangat krusial untuk menjawab email ataupun telepon pelanggan. Sebagai aplikasi contoh, mari buat project baru dan kita beri nama StarSupport:
 
-```
+```bash
 $ composer create-project laravel/laravel starsupport
 
 # Atau dengan Laravel Installer:
@@ -31,7 +31,7 @@ Ikuti proses pembuatan project baru yang muncul. Kita tidak akan menggunakan _st
 
 Sekarang, mari buat model `Customer` berikut dengan migrasi, factory serta sebuah seeder:
 
-```
+```bash
 $ php artisan make:model Customer --migration --factory --seed
 ```
 
@@ -44,7 +44,7 @@ Perintah di atas akan membuat empat file:
 
 Mari ubah konten keempat file tersebut, dimulai dengan migrasinya:
 
-```
+```php
 $table->id();
 $table->string('name');
 $table->string('email')->unique();
@@ -57,7 +57,7 @@ $table->timestamps();
 
 Kita perlu sebuah cara untuk mengisi database dengan data palsu, jadi mari kita siapkan sebuah factory:
 
-```
+```php
 'name' => fake()->firstName() . ' ' . fake()->lastName(),
 'email' => fake()->unique()->safeEmail(),
 'account_number' => fake()->unique()->randomNumber(8, true),
@@ -68,7 +68,7 @@ Kita perlu sebuah cara untuk mengisi database dengan data palsu, jadi mari kita 
 
 Sempurna. Berikutnya kita akan gunakan factory tersebut di `CustomerSeeder`. Kita akan membutuhkan data yang sangat banyak untuk menguji fitur pencarian yang akan dibuat, jadi buatlah sebanyak dua juta data dibagi dalam 100rb kelompok data agar proses pembuatannya lebih cepat.
 
-```
+```php
 public function run(): void
 {
     $total = 2_000_000;
@@ -82,7 +82,7 @@ public function run(): void
 
 Jangan lupa memanggil seeder tersebut di `DatabaseSeeder`:
 
-```
+```php
 public function run(): void
 {
     User::factory()->create([
@@ -96,13 +96,13 @@ public function run(): void
 
 Terakhir, kita ingin membuat semua field di model Customer bisa diisi (fillable). Kita bisa melakukannya dengan menulis semua kolom di `$fillable` atau menulis array kosong untuk field `$guarded`:
 
-```
+```php
 protected $guarded = [];
 ```
 
 Terakhir, mulai proses seeding database-nya:
 
-```
+```bash
 php artisan migrate:fresh --seed
 ```
 
@@ -112,7 +112,7 @@ Tujuan kita adalah membuat fitur pencarian berdasarkan nama, email atau alamat. 
 
 Backend akan menerima request tersebut dan melakukan query `SELECT` menggunakan operator `LIKE`. Sebagai contoh, bila kata kuncinya “john”, maka query-nya akan terlihat sebagai berikut:
 
-```
+```sql
 SELECT
     *
 FROM
@@ -125,7 +125,7 @@ WHERE
 
 Query tersebut dalam diimplementasi sebagai sebuah scope di model Customer:
 
-```
+```php
 public function scopeSearch(Builder $query, string $keyword): Builder
 {
     return $query->where('name', 'LIKE', "%{$keyword}%")
@@ -136,7 +136,7 @@ public function scopeSearch(Builder $query, string $keyword): Builder
 
 ..dan menggunakannya dengan cara:
 
-```
+```php
 Customer::search('john')->get();
 ```
 
@@ -144,7 +144,7 @@ Next, mari kita lakukan _benchmark_ atas performa query yang baru saja dibahas. 
 
 Jika pembaca tidak familiar, jangan risau karena pemakaiannya sangat mudah. Fitur ini menerima sebuah callback, menjalankannya lalu akan memberikan waktu eksekusinya dalam milidetik. Buka Tinker dengan `php artisan tinker`, lalu jalankan peirntah berikut:
 
-```
+```php
 use App\Models\Customer;
 use Illuminate\Support\Benchmark;
 Benchmark::dd(fn () => Customer::search('john')->get());
@@ -160,7 +160,7 @@ Benchmark cukup keren kan? Yang tidak keren dari hasil di atas adalah waktu yang
 
 Mari kita coba lagi. Dengan Benchmark, kita bisa menjalankan suatu query beberapa kali dan mendapat waktu rata-rata. Mari kita coba sepuluh iterasi. Kita bisa menggunakan kata kunci yang sama untuk konsistensi atau mencari dengan kata kunci yang random:
 
-```
+```php
 use App\Models\Customer;
 use Illuminate\Support\Benchmark;
 Benchmark::dd(fn () => Customer::search(Str::random(4))->get(), iterations: 10);
@@ -188,7 +188,7 @@ Kita dapat membuat full-text index pada kolom `CHAR`, `VARCHAR`, atau `TEXT`. Ki
 
 Mari buat sebauh migrasi baru dengan `php artisan make:migration` untuk menambahkan full-text index ke tabel customers:
 
-```
+```php
 <?php
 
 use Illuminate\Database\Migrations\Migration;
@@ -217,7 +217,7 @@ Jalankan dengan `php artisan migrate`. Jika pembaca melihat struktur tabel, maka
 
 Untuk memanfaatkan full-text search di pencarian, kita harus memperbarui search scope untuk mengganti `where` dengan `whereFullText`.
 
-```
+```php
 public function scopeSearch(Builder $query, string $keyword): Builder
 {
     return $query->whereFullText(['name', 'email', 'address'], $keyword);
@@ -226,13 +226,13 @@ public function scopeSearch(Builder $query, string $keyword): Builder
 
 Mari kita coba dengan menajalankan perintah berikut di Tinker:
 
-```
+```php
 Customer::search('john')->get();
 ```
 
 Lebih cepat kan? Perintah tersebut akan mengubah query SQL-nya menjadi:
 
-```
+```sql
 SELECT * FROM `customers`
 WHERE MATCH (`name`, `email`, `address`)
 AGAINST ('tom' IN NATURAL LANGUAGE MODE);
@@ -240,7 +240,7 @@ AGAINST ('tom' IN NATURAL LANGUAGE MODE);
 
 Mari kita ukur _impact_ dari implementasi _full-text index_ dengan menjalankan benchmark yang sebelumnya kita lakukan:
 
-```
+```php
 use App\Models\Customer;
 use Illuminate\Support\Benchmark;
 Benchmark::dd(fn () => Customer::search(Str::random(4))->get(), iterations: 10);
@@ -266,7 +266,7 @@ Angkanya mungkin bisa berbeda-beda, tapi dari hasil yang penulis dapatkan `2.974
 
 Kita jalankan sebuah eksperimen. Ambil tiga customer lalu ubah namanya. Dua data harus bernama Tom dan sisanya bernama Tommy. Contoh:
 
-```
+```sql
 UPDATE `customers` SET `name` = 'Tom Brown' WHERE `id` = 99;
 UPDATE `customers` SET `name` = 'Tom Martinez' WHERE `id` = 134;
 UPDATE `customers` SET `name` = 'Tommy Jones' WHERE `id` = 328;
@@ -274,7 +274,7 @@ UPDATE `customers` SET `name` = 'Tommy Jones' WHERE `id` = 328;
 
 Sekarang mari kita coba:
 
-```
+```php
 Customer::search('tom')->get();
 ```
 
@@ -287,19 +287,19 @@ ft_min_word_len=3
 
 Simpan lalu restart server MySQL. Setelah melakukan perubahan ini, kita perlu menghapus dan membuat ulang full-text index sebelumnya yang bisa dilakukan dengan rollback dan migrasi kembali.
 
-```
+```bash
 php artisan migrate:rollback && php artisan migrate
 ```
 
 Sekarang kita coba lagi:
 
-```
+```php
 Customer::search('tom')->get();
 ```
 
 Kali ini kita seharusnya akan mendapat beberapa data bernama Tom, tapi ternyata kata kunci “tom” tidak memberikan data si Tommy.
 
-```
+```php
 > App\Models\Customer::search('tom')->get()->pluck('id')->contains(328);
 = false
 ```
@@ -308,7 +308,7 @@ Kenapa? Karena fitur full-text search MySQL tidak secara otomatis mengikutsertak
 
 Untuk mencapai tujuan tersebut kita akan menggunakan **boolean mode**. Dengan mode ini, kita dapat menggunakan beberapa karakter khusus baik di depan maupun di belakang sebuah string. Contoh, operator `*` artinya keyword `tom*` akan mencari semua kata berawalan “tom”.
 
-```
+```sql
 SELECT * FROM `customers`
 WHERE MATCH(`name`, `email`, `address`)
 AGAINST ('tom*' IN boolean mode);
@@ -316,7 +316,7 @@ AGAINST ('tom*' IN boolean mode);
 
 Kita bisa memperbarui scope agar menggunakan query di atas dengan menambahkan bintang diakhir keyword dan menggunakna boolean mode:
 
-```
+```php
 public function scopeSearch(Builder $query, string $keyword): Builder
 {
     return $query->whereFullText(
@@ -329,7 +329,7 @@ public function scopeSearch(Builder $query, string $keyword): Builder
 
 Sekarang kita bisa mencari Tommy:
 
-```
+```php
 > App\Models\Customer::search('tom')->get()->pluck('id')->contains(328);
 = true
 ```
@@ -338,7 +338,7 @@ Sip! Fungsi pencarian yang kita buat sudah bisa mencari kata kunci parsial. Namu
 
 Terakhir, kita perlu ingat untuk memberikan batas hasil pencarian. Memanggil `get` dapat menghasilkan ribuan data. Oleh karena itu kita bisa tentukan misalnya hanya mengambil 20 data teratas:
 
-```
+```php
 Customer::search($this->keyword)->take(20)->get();
 ```
 
@@ -350,13 +350,13 @@ Meskipun mengembangkan frontend pencarian bukan fokus dari artike lini, melihat 
 
 Mari kita mulai dengan memasang Livewire lewat Composer:
 
-```
+```bash
 composer require livewire/livewire
 ```
 
 Langkah di atas bisa dilewatkan bila project sudah menggunakan Livewire (contohnya jika sudah memasang Laravel Breeze dengan opsi Livewire with Alpine). Berikutnya, buat search component dengan perintah:
 
-```
+```bash
 php artisan make:livewire customer-search
 ```
 
@@ -369,7 +369,7 @@ Kita akan membutuhkan properti `$keyword` untuk menyimpan kata kunci pencarian d
 
 Selnjutnya, kita perlu membuat sebuah fungsi `search()`. Hasil akhir component tersebut akan adalah sebagai berikut:
 
-```
+```php
 <?php
 
 namespace App\Livewire;
@@ -405,7 +405,7 @@ Sempurn~ Mari kita lanjutkan ke view. Apa yang kita butuhkan? Hanya dua hal:
 
 Template view Livewire tersebut dapat terlihat sebagai berikut:
 
-```
+```html
 <div class="customer-search">
     <input
         wire:model="keyword"
@@ -436,7 +436,7 @@ Kita menggunakan `wire:keyup="search"` agar setiap kali pengguna menekan suatu t
 
 Semua sudah siap, sekarang kita tinggal menambahkan `<livewire:customer-search />` ke view Blade. Sebagai contoh kita tambahkan saja di dalam `welcome.blade.php`:
 
-```
+```html
 <!DOCTYPE html>
 <html>
     <head>
@@ -465,7 +465,7 @@ Hasil yang didapatkan pembaca mungkin akan berbeda karena isi database sesuai de
 
 Akan lebih cantik bila kita bisa memberikan highlight kata kunci pada detail customer dengan tag `<mark>`. Contoh, bila kata kuncinya “john”:
 
-```
+```html
 <li>
     <div><mark>John</mark> Doe</div>
     <div><mark>john</mark>@gmail.com</div>
@@ -475,13 +475,13 @@ Akan lebih cantik bila kita bisa memberikan highlight kata kunci pada detail cus
 
 Ada banyak cara untuk mencapainya. Cara yang cukup sederhana ialah dengan menggunakan properti `computed` milik Livewire. Tambahkan kode berikut di dalam kelas Livewire kita:
 
-```
+```php
 use Livewire\Attributes\Computed;
 ```
 
 Lalu tambahkan method berikut:
 
-```
+```php
 #[Computed]
 public function highlightedCustomers()
 {
@@ -495,7 +495,7 @@ public function highlightedCustomers()
 
 Sekarang di view kita ganti `$customers` dengan `$this->highlightedCustomers`.
 
-```
+```php
 @forelse ($this->highlightedCustomers as $customer)
     <li>
         <div>{!! $customer['name'] !!}</div>
