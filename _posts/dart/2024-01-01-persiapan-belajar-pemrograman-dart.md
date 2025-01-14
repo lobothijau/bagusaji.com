@@ -4,6 +4,7 @@ date: 2025-01-01
 description: "Artikel ini membahas persiapan yang dibutuhkan untuk belajar pemrograman Dart 3.x terutama untuk menyiapkan _development environment_ yang dibutuhkan agar bisa mengikuti pembahasan pada bab-bab selanjutnya."
 series: dart
 series_title: "Persiapan Belajar Dart"
+favorite: true
 ---
 
 {% include series.liquid %}

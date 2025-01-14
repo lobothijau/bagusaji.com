@@ -5,6 +5,7 @@ description: Kita akan memulai seri belajar SQLite dengan membahas apa itu SQLit
 tags: sqlite
 series: sqlite
 series_title: Belajar SQLite untuk Pemula
+favorite: true
 ---
 
 {% include series.liquid %}
