@@ -1,6 +1,6 @@
 ---
 title: "Menggunakan rbenv untuk Mengelola Versi Ruby"
-date: 2025-01-18
+date: 2025-01-16
 description: |
   Artikel ini membahas cara menggunakan rbenv untuk mengelola versi Ruby di Mac OS X dan Linux.
 tags: ruby
