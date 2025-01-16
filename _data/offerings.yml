@@ -2,7 +2,7 @@
   icon: outline/newspaper.svg
   href: _pages/articles.liquid
   cta: Read articles
-  description: Tulisan saya tentang pengembangan aplikasi mobile dan web.
+  description: Tulisan saya tentang pengembangan aplikasi mobile (Flutter, React Native, Kotlin) dan web (Laravel, React.js).
 
 -
   title: Training & Workshop
