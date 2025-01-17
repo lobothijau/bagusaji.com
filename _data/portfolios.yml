@@ -1,3 +1,11 @@
+- name: Fotogrit Corporate Website (2025)
+  description: Fotogrit is a company that provides photography and event related services for young sports enthusiasts.
+  link:
+    href: /portfolios/fotogrit-corporate-website/
+    label: "Next.js Development"
+    external: false
+  thumbnail: fotogrit.jpg
+
 - name: 3D Basketball Court Designer (2024)
   description: 3D Configurator web app using Three.js to design custom basketball court.
   link:
