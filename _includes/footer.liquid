@@ -2,7 +2,7 @@
   <div class="mx-auto max-w-7xl lg:px-8">
     {% unless page.hide_newsletter %}
       <div class="border-t border-gray-100">
-        {% include newsletter/cta.liquid wide=true %}
+        {% comment %}{% include newsletter/cta.liquid wide=true %}{% endcomment %}
       </div>
     {% endunless %}
     <div class="relative px-4 sm:px-8 lg:px-12 border-t border-gray-100 pt-10 pb-16">
