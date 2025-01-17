@@ -2,7 +2,7 @@
   description: Fotogrit is a company that provides photography and event related services for young sports enthusiasts.
   link:
     href: /portfolios/fotogrit-corporate-website/
-    label: "Next.js Development"
+    label: "Next.js"
     external: false
   thumbnail: fotogrit.jpg
 
@@ -18,7 +18,7 @@
   description: Fullstack web development for dispensingrobotics.com, an industrial based company with global customer.
   link:
     href: /portfolios/dispensing-robotics/
-    label: "Web Development"
+    label: "Laravel Development"
     external: false
   thumbnail: dispensingrobots.jpg
 
@@ -34,7 +34,7 @@
   description: Hino-Connect is a fleet management app to monitor truck movement and other data. 
   link:
     href: /portfolios/hino-connect/
-    label: Android Development
+    label: Android (Kotlin)
     external: false
   thumbnail: hino-connect.jpeg
 
@@ -58,7 +58,7 @@
   description: BUMA Digiman is an Android only apps built with Kotlin to digitalized mining-vehicle inspection workflow.
   link:
     href: /portfolios/buma-digiman/
-    label: Android Development
+    label: Android (Kotlin)
     external: false
   thumbnail: digiman-form.webp
 
@@ -66,7 +66,7 @@
   description: Universal Collection Inspection app digitalize car & bike inspection process with beautiful UI and smooth experience.
   link:
     href: /portfolios/universal-lelang-inspection/
-    label: Android Development
+    label: "Android (Kotlin & Java)""
     external: false
   thumbnail: balai-lelang-inspection.webp
 
@@ -82,7 +82,7 @@
   description: Digital chess book with interactive board, build with Kotlin for Android native. 
   link:
     href: /portfolios/buku-catur/
-    label: Android Development
+    label: Android (Kotlin)
     external: false
   thumbnail: bukucatur-1.jpg
 
@@ -90,6 +90,6 @@
   description: Android-based offline Japanese-Indonesian dictionary to help learner browse words using katakana, hiragana or kanji.
   link:
     href: /portfolios/jiten/
-    label: Android Development
+    label: Android (Kotlin)
     external: false
   thumbnail: jiten-1.jpg

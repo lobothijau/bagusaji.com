@@ -19,12 +19,16 @@ layout: simple
       <p class="text-gray-600 mb-3">{{ portfolio.description }}</p>
 
       <div class="inline-flex items-center gap-2 text-sm text-gray-500">
-        {% if portfolio.link.label == "Android Development" %}
+        {% if portfolio.link.label contains "Android" %}
           {% assign icon_path = "/assets/images/icons/android.svg" %}
         {% elsif portfolio.link.label == "React Native" %}
           {% assign icon_path = "/assets/images/icons/react-native.svg" %}
         {% elsif portfolio.link.label == "Flutter" %}
           {% assign icon_path = "/assets/images/icons/flutter.svg" %}
+        {% elsif portfolio.link.label == "Next.js" %}
+          {% assign icon_path = "/assets/images/icons/nextjs.svg" %}
+        {% elsif portfolio.link.label == "Laravel Development" %}
+          {% assign icon_path = "/assets/images/icons/laravel.svg" %}
         {% else %}
           {% assign icon_path = "/assets/images/icons/chrome.svg" %}
         {% endif %}
