@@ -1,7 +1,7 @@
 ---
 title: Mengenal Konsep FEN (Forsyth-Edwards Notation) di Permainan Catur
 date: 2025-01-21 10:00:00 +0700
-description: Mengenal Konsep FEN (Forsyth-Edwards Notation) di Permainan Catur
+description: Pecatur yang sering menggunakan komputer untuk bermain atau berlatih, pasti pernah ketemu dengan istilah FEN. Apa itu FEN? Bagaimana cara membaca FEN? Artikel ini akan menjawab pertanyaan tersebut.
 tags: [catur]
 ---
 
@@ -23,7 +23,7 @@ Bagaimana prosesnya? Mari kita bahas satu per satu.
 
 ## Posisi Bidak
 
-Apabila pembaca perhatikan, delapan bagian pertama yang dipisahkan oleh `/` adalah posisi bidak di masing-masin baris dimulai dari posisi hitam (dalam diagram catur, hitam berada di bagian atas dan pada umumnya komputer akan memproses suatu matriks dimulai dari atas ke bawah atau dari kiri ke kanan). 
+Apabila pembaca perhatikan, delapan bagian pertama yang dipisahkan oleh `/` adalah posisi bidak di masing-masing baris dimulai dari posisi hitam (dalam diagram catur, hitam berada di bagian atas dan pada umumnya komputer akan memproses suatu matriks dimulai dari atas ke bawah atau dari kiri ke kanan). 
 
 Bagian pertama adalah `rnbqkbnr`, ini merupakan posisi bidak hitam di baris pertama (bidak hitam selalu dinyatakan dengan huruf kecil). Harap ingat bahwa setiap bidak akan menggunakan istilah dalam bahasa Inggris. Berikut adalah istilah bidak hitam:
 
@@ -48,7 +48,9 @@ Sekarang, mari kita berlatih. Untuk posisi di bawah ini, seperti apa kode FENnya
 4. Lanjutkan dengan dua kotak kosong, berarti `2`, bila kita gabungkan menjadi `pp1p2`.
 5. Terakhir, ada dua pion, berarti `pp`, bila kita gabungkan menjadi `pp1p2pp`.
 
-Mari kita lanjutkan setelah empat angka 8, adalah `PPPPPPPP/RNBQKBNR`. Bisa ditebak? Betul, ini merupakan posisi bidak putih di kedua dan pertama dengan aturan yang sama dengan posisi hitam, hanya saja bidak putih selalu dinyatakan dengan huruf kapital. 
+Lanjut. 
+
+Setelah empat angka 8, adalah `PPPPPPPP/RNBQKBNR`. Bisa ditebak? Betul, ini merupakan posisi bidak putih di kedua dan pertama dengan aturan yang sama dengan posisi hitam, hanya saja bidak putih selalu dinyatakan dengan huruf kapital. 
 
 Baik, mari kita uji lagi pemahaman pembaca dengan mengubah posisi berikut ke dalam notasi FEN.
 
