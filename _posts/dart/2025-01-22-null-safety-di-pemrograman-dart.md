@@ -1,4 +1,13 @@
-## Apa itu Null? 
+---
+title: "Null Safety di Pemrograman Dart"
+date: 2025-01-22
+description: "Artikel ini membahas konsep null safety di bahasa pemrograman Dart dan bagaimana cara menggunakannya."
+series: dart
+series_title: "Null Safety di Pemrograman Dart"
+series_order: 80
+---
+
+{% include series.liquid %}
 
 Dalam konsep pemrograman Dart, null berarti "tidak ada nilai". Konsep ini sangat penting karena membantu dalam mengatasi kesalahan yang sering terjadi dalam pemrograman, yaitu kesalahan yang terjadi karena nilai yang diharapkan tidak ada. 
 

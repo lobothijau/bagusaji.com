@@ -7,6 +7,7 @@ series: c
 series_title: Belajar Pemrograman C untuk Pemula
 index: 1
 favorite: true
+series_order: 10
 ---
 
 {% include series.liquid %}

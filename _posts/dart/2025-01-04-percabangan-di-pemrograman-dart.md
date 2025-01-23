@@ -4,6 +4,7 @@ date: 2025-01-04
 description: "Untuk menghasilkan suatu aplikasi yang bisa bekerja dengan baik, kita perlu membuat suatu program yang bisa membuat suatu keputusan berdasarkan suatu kondisi."
 series: dart
 series_title: "Percabangan di Pemrograman Dart"
+series_order: 40
 ---
 
 {% include series.liquid %}

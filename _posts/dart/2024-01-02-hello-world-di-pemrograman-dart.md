@@ -4,6 +4,7 @@ date: 2025-01-02
 description: "Artikel ini membahas cara menjalankan program Dart sederhana dan membuat project Dart baru."
 series: dart
 series_title: "Hello World di Pemrograman Dart"
+series_order: 20
 ---
 
 {% include series.liquid %}

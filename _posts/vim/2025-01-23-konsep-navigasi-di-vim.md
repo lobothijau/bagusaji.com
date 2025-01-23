@@ -5,6 +5,7 @@ description: Artikel ini membahas beberapa konsep dasar navigasi disebuah file d
 tags: vim
 series: vim
 series_title: Belajar Vim untuk Pemula
+series_order: 30
 ---
 
 {% include series.liquid %}

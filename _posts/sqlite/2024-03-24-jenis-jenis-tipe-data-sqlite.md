@@ -5,6 +5,7 @@ description: Artikel ini akan membahas tentang jenis-jenis tipe data yang dapat 
 tags: sqlite
 series: sqlite
 series_title: Belajar SQLite untuk Pemula
+series_order: 40
 ---
 
 {% include series.liquid %}

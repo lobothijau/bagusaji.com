@@ -4,6 +4,7 @@ date: 2025-01-06
 description: "Fungsi adalah blok kode yang bisa dipanggil diberbagai tempat setelah didefinisikan."
 series: dart
 series_title: "Fungsi di Pemrograman Dart"
+series_order: 60
 ---
 
 {% include series.liquid %}

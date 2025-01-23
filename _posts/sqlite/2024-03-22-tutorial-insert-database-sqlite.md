@@ -5,6 +5,7 @@ description: Artikel ini akan membahas bagaimana cara melakukan operasi  `INSERT
 tags: sqlite
 series: sqlite
 series_title: Belajar SQLite untuk Pemula
+series_order: 30
 ---
 
 {% include series.liquid %}

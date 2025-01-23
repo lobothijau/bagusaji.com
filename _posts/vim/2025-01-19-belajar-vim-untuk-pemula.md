@@ -6,6 +6,7 @@ tags: vim
 series: vim
 series_title: Belajar Vim untuk Pemula
 favorite: true
+series_order: 10
 ---
 
 {% include series.liquid %}

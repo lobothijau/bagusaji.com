@@ -5,6 +5,7 @@ description: "Artikel ini membahas persiapan yang dibutuhkan untuk belajar pemro
 series: dart
 series_title: "Persiapan Belajar Dart"
 favorite: true
+series_order: 10
 ---
 
 {% include series.liquid %}

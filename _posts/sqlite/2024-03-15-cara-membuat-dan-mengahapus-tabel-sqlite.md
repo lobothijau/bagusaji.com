@@ -5,6 +5,7 @@ description: Artikel ini akan membahas tentang cara membuat dan menghapus tabel 
 tags: sqlite
 series: sqlite
 series_title: Belajar SQLite untuk Pemula
+series_order: 20
 ---
 
 {% include series.liquid %}

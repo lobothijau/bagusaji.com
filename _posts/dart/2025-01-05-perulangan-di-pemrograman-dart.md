@@ -4,6 +4,7 @@ date: 2025-01-05
 description: "Perulangan dipakai untuk mengeksekusi suatu kode yang perlu dijalankan berulang kali hanya lewat satu kali penulisan."
 series: dart
 series_title: "Perulangan di Pemrograman Dart"
+series_order: 50
 ---
 
 {% include series.liquid %}

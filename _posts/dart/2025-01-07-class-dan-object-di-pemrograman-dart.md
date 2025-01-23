@@ -4,6 +4,7 @@ date: 2025-01-07
 description: "Setelah memahai tentang fungsi, berikutnya kita akan mempelajari tentang apa itu class dan object di bahasa pemrograman Dart dan bagaimana cara menggunakannya."
 series: dart
 series_title: "Class dan Object di Pemrograman Dart"
+series_order: 70
 ---
 
 {% include series.liquid %}

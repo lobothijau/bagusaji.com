@@ -4,6 +4,7 @@ date: 2025-01-01
 description: "Menjadi seorang programmer akan membuat kita lebih dekat dengan *command line*. Seri belajar menggunakan command line interface ini akan membantu mengenalkan pembaca dengan berbagai perintah cli."
 series: cli
 series_title: "Persiapan Belajar Menggunakan CLI"
+series_order: 10
 favorite: true
 ---
 

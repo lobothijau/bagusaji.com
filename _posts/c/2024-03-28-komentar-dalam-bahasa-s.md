@@ -6,6 +6,7 @@ tags: c
 series: c   
 series_title: Belajar Pemrograman C untuk Pemula
 index: 3
+series_order: 30
 ---
 
 {% include series.liquid %}

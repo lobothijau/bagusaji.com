@@ -4,6 +4,7 @@ date: 2025-01-03
 description: "Kali ini kita  akan membahas bagaimana mendefinisikan suatu variabel dan jenis-jenis tipe data yang ada dalam bahasa pemrograman Dart."
 series: dart
 series_title: "Variabel & Tipe Data di Pemrograman Dart"
+series_order: 30
 ---
 
 {% include series.liquid %}

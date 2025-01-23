@@ -4,13 +4,13 @@ Expects the page to define the following frontmatter:
 - series: The identifier of the series, from _data/series.yml.
 {% endcomment %}
 
-{% assign posts = site.posts | where: "series", page.series %}
+{% assign posts = site.posts | where: "series", page.series | sort: "series_order" %}
 {% assign series = site.data.series[page.series] %}
 
 <div class="rounded-2xl border border-gray-100 pt-6 pb-2 px-6">
   <h3 class="text-lg lg:text-lg font-medium text-gray-900 mt-0 lg:mt-0">Artikel ini adalah salah satu bagian dari seri <span class="font-bold">{{ series.title }}</span>.</h3>
   <ol class="pt-1">
-    {% for post in posts reversed %}
+    {% for post in posts %}
       {% if page == post %}
         <li>
           <em>{{ post.title }}</em>
