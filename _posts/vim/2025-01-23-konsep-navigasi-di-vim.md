@@ -1,6 +1,6 @@
 ---
 title: "Konsep Navigasi di Vim"
-date: 2025-01-22
+date: 2025-01-22 
 description: Artikel ini membahas beberapa konsep dasar navigasi disebuah file dengan Vim.
 tags: vim
 series: vim
