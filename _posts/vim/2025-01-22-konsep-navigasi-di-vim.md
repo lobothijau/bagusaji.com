@@ -7,6 +7,8 @@ series: vim
 series_title: Belajar Vim untuk Pemula
 ---
 
+{% include series.liquid %}
+
 Bekerja dengan suatu teks tidak selamanya hanya menulis saja. Kita juga akan sering melakukan navigasi diantara baris, kolom, kata maupun kalimat. Navigasi merupakan salah satu konsep yang penting di Vim dan bisa dicapai dengan beberapa cara. 
 
 Artikel kali ini membahas beberapa konsep dasar navigasi disebuah file dengan Vim.

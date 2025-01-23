@@ -7,6 +7,8 @@ series: vim
 series_title: Belajar Vim untuk Pemula
 ---
 
+{% include series.liquid %}
+
 Mayoritas editor lain seperti VSCode, Sublime Text, dll. ketika dibuka akan langsung memungkinkan pengguna untuk mengetik langsung ke dalam file. Sementara itu Vim memiliki empat mode yaitu normal, insert, command dan visual. Fungsi keempatnya adalah sebagai berikut:
 
 **Normal mode** akan aktif setiap membuka Vim. Mode ini kita bisa menulis semua jenis perintah atau melakukan navigasi dan manipulasi teks. Mayoritas pengguna Vim akan lebih sering berada di mode ini. Pengguna senior akan menyarankan untuk selalu berada di mode normal saat tidak mengetik dengan menakan tombol `Esc`.
