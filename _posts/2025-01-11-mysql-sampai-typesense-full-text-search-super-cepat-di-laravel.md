@@ -405,7 +405,7 @@ Sempurn~ Mari kita lanjutkan ke view. Apa yang kita butuhkan? Hanya dua hal:
 
 Template view Livewire tersebut dapat terlihat sebagai berikut:
 
-```html
+```php
 <div class="customer-search">
     <input
         wire:model="keyword"
@@ -436,7 +436,7 @@ Kita menggunakan `wire:keyup="search"` agar setiap kali pengguna menekan suatu t
 
 Semua sudah siap, sekarang kita tinggal menambahkan `<livewire:customer-search />` ke view Blade. Sebagai contoh kita tambahkan saja di dalam `welcome.blade.php`:
 
-```html
+```php
 <!DOCTYPE html>
 <html>
     <head>
