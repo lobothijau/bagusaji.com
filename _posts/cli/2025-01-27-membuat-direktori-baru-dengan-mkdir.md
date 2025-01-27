@@ -8,6 +8,8 @@ series_order: 30
 series_title: "Membuat Direktori Baru dengan mkdir"
 ---
 
+{% include series.liquid %}
+
 Untuk membuat direktori baru atau folder baru lewat command line dapat kita lakukan dengan perintah `mkdir`. Cara penulisannya adalah sebagai berikut:
 
 ```bash

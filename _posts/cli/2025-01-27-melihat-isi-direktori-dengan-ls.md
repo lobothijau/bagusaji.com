@@ -8,6 +8,8 @@ series_order: 50
 series_title: "Melihat Isi Direktori Dengan ls"
 ---
 
+{% include series.liquid %}
+
 Untuk melihat isi dari suatu direktori, kita bisa menggunakan perintah `ls`. Perintah ini akan menampilkan semua file dan direktori yang ada di dalam direktori saat ini.
 
 ```bash
