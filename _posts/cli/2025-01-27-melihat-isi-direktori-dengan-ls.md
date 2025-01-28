@@ -60,6 +60,7 @@ Flag `-l` akan menampilkan informasi detail file:
 - `staff` adalah grup pemilik file.
 - `128` adalah ukuran file dalam byte.
 - `Oct 18 14:07` adalah tanggal dan waktu file terakhir diubah.
+- `Documents` komponen terakhir adalah nama file atau direktori.
 
 ## Melihat Ukuran File
 
@@ -76,3 +77,4 @@ drwxr-x---+ 109 baguzzzaji  staff   3.4K Jan 27 09:38 ..
 -rw-r--r--@   1 baguzzzaji  staff   184M May 28  2024 C.mp4
 -rw-r--r--@   1 baguzzzaji  staff   192M May 28  2024 D.mp4
 ```
+
