@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Cara Membuat Android Virtual Device (AVD) alias Emulator di Android Studio"
+description: "Artikel ini membahas cara membuat emulator alias Android Virtual Device (AVD) di Android Studio."
 date: 2025-02-01 08:00:00 +0700
 tags: android, emulator, avd, android studio
 ---
