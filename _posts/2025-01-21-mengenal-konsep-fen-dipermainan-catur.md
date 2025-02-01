@@ -2,7 +2,7 @@
 title: Mengenal Konsep FEN (Forsyth-Edwards Notation) di Permainan Catur
 date: 2025-01-21 10:00:00 +0700
 description: Pecatur yang sering menggunakan komputer untuk bermain atau berlatih, pasti pernah ketemu dengan istilah FEN. Apa itu FEN? Bagaimana cara membaca FEN? Artikel ini akan menjawab pertanyaan tersebut.
-tags: [catur]
+tags: catur
 ---
 
 Membahas catur kok di blog pemrograman? *Well*, sebagai programmer yang juga pecinta catur  penulis tentu cukup familiar dengan konsep-konsep catur di komputer, sehingga kali ini penulis rasa menyinggung catur bisa menjadi variasi diantara artikel-artikel pemrograman yang sudah ada. 

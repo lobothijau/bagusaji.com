@@ -2,7 +2,7 @@
 title: "Konversi File .nrg ke .iso di Mac OS X"
 date: 2025-01-19
 description: "Artikel ini membahas bagaimana cara mengubah file .nrg menjadi .iso di Mac OS X yang juga bisa di aplikasikan di Linux."
-tags: [game, macos]
+tags: game, macos
 ---
 
 Beberapa waktu yang lalu, saya ingin kembali memainkan game legendaris sudah sudah lama tidak saya mainkan, yaitu Pro Evolution Soccer 6 (PES 6). Dokumen yang saya dapatkan adalah file .nrg yang merupakan file ISO yang dikompres dalam format Nero. File ini tidak bisa terbaca oleh Parallels Desktop (aplikasi virtualisasi Windows). Agar file ini bisa dibuka oleh virtual CD/DVD ROM, saya perlu mengkonversi file .nrg ke .iso.

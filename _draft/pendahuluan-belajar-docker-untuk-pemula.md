@@ -23,3 +23,13 @@ Meskipun VM bisa menawarkan solusi yang bisa memaksimal penggunaan sumber daya s
 Container diciptakan untuk mengatasi kekurangan VM. Ia adalah sebuah software yang memanfaatkan teknologi virtualisasi, namun dengan cara yang lebih ringkas dan ringan. Sebuah server yang hanya bisa memiliki 10 VM, bisa menjalankan puluhan bahkan ratusan container. Hal ini tentu saja membuat pemanfaatan sumber daya server menjadi lebih optimal. 
 
 **Docker** adalah sebuah software yang membuat teknologi sekompleks container menjadi lebih mudah digunakan bagi semua orang. Ada banyak teknologi container lain sebelum Docker, tapi Docker lah yang membuat container menjadi sepopuler ini. 
+
+## Linux & Windows Container
+
+Kecanggihan container dimulai dari sistem Linux. Cukup dipahami mengingat sifatnya yang *open source* sehingga memungkinkan riset yang lebih terbuka. Meskipun begitu, Microsoft sudah bekerja keras untuk membawa teknologi container ke Windows. 
+
+Semua sistem operasi Windows modern bisa menjalankan Linux container maupun Windows container. 
+
+Umumnya sistem container akan mengikuti sitem operasi host. Jadi container Windows bisa berjalan di Windows, dan container Linux bisa berjalan di Linux. Namun, karena Windows memiliki Windows Subsystem for Linux (WSL 2), maka container Linux bisa berjalan di Windows memanfaatkan teknologi ini. 
+
+Penulis pribadi belum pernah mencoba menggunakan container Windows, jadi artikel-artikel yang akan di bahas hanya akan membahas mengenai Linux container. 

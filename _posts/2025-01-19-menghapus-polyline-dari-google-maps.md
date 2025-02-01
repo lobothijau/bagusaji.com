@@ -2,7 +2,7 @@
 title: "Menghapus Polyline dari Google Maps Android"
 date: 2025-01-19
 description: "Artikel ini membahas cara menghapus polyline dari Google Maps pada pemrograman Android menggunakan Kotlin"
-tags: [google-maps, android]
+tags: google-maps, android
 ---
 
 Polyline dalam konteks Google Maps merupakan sekelompok garis yang menghubungkan beberapa titik dalam peta untuk menggambarkan jalur, rute atau bentuk lain. 
