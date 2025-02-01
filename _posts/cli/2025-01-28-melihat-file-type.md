@@ -1,3 +1,16 @@
+---
+layout: post
+title: "Melihat Tipe File dengan Perintah `file` di Linux"
+description: "Artikel ini membahas cara melihat tipe file dengan perintah `file` di Linux."
+date: 2025-01-28 08:00:00 +0700
+tags: cli
+series: cli
+series_title: "Melihat Tipe File dengan Perintah `file` di Linux"
+series_order: 55
+---
+
+{% include toc %}
+
 Suatu sistem komputer akan memiliki banyak data dengan tipe yang berbeda-beda. Akan sangat membantu bila kita bisa mengetahui tipe data dari suatu file. Perintah `file` bisa kita gunakan untuk tujuan tersebut. 
 
 ```
