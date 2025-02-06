@@ -1,6 +1,6 @@
 # Masilotti.com, built with Jekyll
 
-This repo holds the code for [Masilotti.com](https://masilotti.com).
+This repo holds the code for [bagusaji.com](https://bagusaji.com) a Jekyll blog based on [Masilotti.com](https://masilotti.com).
 
 ## Requirements
 
