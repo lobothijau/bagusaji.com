@@ -16,3 +16,11 @@ function add(arr) {
   return result;
 }
 ```
+
+Cara di atas mirip dengan soal [double the array](/_posts/menjawab-soal-tes-javascript-double-the-array) yaitu dengan membuat looping dan menjumlahkan masing-masing item serta menyimpannya di sebuah variabel penampung. JavaScript memiliki sebuah method bernama reduce yang dapat melakukan proses yang sama:
+
+```js
+function add(arr) {
+  return arr.reduce((prev, current) => prev + current, 0);
+}
+```

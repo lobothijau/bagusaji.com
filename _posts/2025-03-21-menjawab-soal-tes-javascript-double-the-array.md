@@ -16,3 +16,13 @@ function double(arr) {
   return results;
 }
 ```
+
+Cara di atas menggunakan *step by step* yang memanfaatkan pembuatan array baru dan pengisian data dengan *looping*. Tidak ada yang salah dengan cara di atas, tapi JavaScript juga memiliki satu method yang bisa dimanfaatkan untuk melakukan hal yang sama method tersbeut adalah map. 
+
+```js
+function double(arr) {
+  return arr.map((item) => item * 2);
+}
+```
+
+Method map akan secara internal melakukan looping dan mengembalikan sebuah array baru. 
