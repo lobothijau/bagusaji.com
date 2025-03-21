@@ -1,7 +1,7 @@
 ---
 title: "Menjawab Soal Tes JavaScript - Double the Array"
 date: 2025-03-21
-description: "Artikel ini membahas bagaimana cara menjawab soal tes untuk menggandakan item array"
+description: "Artikel ini membahas bagaimana cara menjawab soal tes untuk menggandakan item array."
 tags: javascript, interview
 ---
 
@@ -16,5 +16,3 @@ function double(arr) {
   return results;
 }
 ```
-
-Penulis rasa jawabannya cukup jelas bila pembaca sudah pernah belajar tentang array. 

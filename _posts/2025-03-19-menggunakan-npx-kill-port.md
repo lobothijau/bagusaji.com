@@ -1,7 +1,7 @@
 ---
 title: "Kill Process yang Berjalan di Port Tertentu dengan npx kill-port"
 date: 2025-03-19
-description: "Artikel ini membahas trik untuk menutup process yang berjalan di port tertentu lewat package kill-port"
+description: "Artikel ini membahas trik untuk menutup process yang berjalan di port tertentu lewat package kill-port."
 tags: nodejs,nodemon
 ---
 
