@@ -1,6 +1,6 @@
 ---
 title: "Upgrade Versi MacOS di Github Actions"
-date: 2025-04-10
+date: 2025-04-22
 description: "Artikel ini membahas bagaimana cara downgrade versi Xcode di macOS dari versi 16.3 ke 16.2."
 tags: xcode,macos,ios,react-native
 ---
