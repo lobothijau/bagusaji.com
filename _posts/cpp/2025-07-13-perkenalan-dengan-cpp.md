@@ -6,7 +6,7 @@ description: "Artikel ini memperkenalkan tentang bahasa pemrograman C dan C++ se
 tags: cpp
 series: cpp
 series_title: Belajar Pemrograman C++ Untuk Pemula
-index: 1
+index: 3
 favorite: true
 series_order: 20
 ---
