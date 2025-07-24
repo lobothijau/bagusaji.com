@@ -1,4 +1,3 @@
-
 ---
 title: Perkenalan dengan C/C++ Development
 date: 2025-07-15
@@ -10,6 +9,8 @@ index: 4
 favorite: true
 series_order: 25
 ---
+
+{% include series.liquid %}
 
 Sebelum kita bisa menulis dan mengeksekusi program C++, kita perlu memahami bagaimana sebuah program C++ dikembangkan. Berikut diagram yang menggambarkan prosesnya secara sederhana:
 

@@ -10,6 +10,7 @@ favorite: true
 series_order: 15
 ---
 
+{% include series.liquid %}
 
 Komputer modern sangatlah cepat, dan terus bertambah cepat. Namun, komputer juga memiliki beberapa kekurangan: 
 mereka hanya bisa memahami sejumlah instruksi yang terbatas, dan harus diberi tahu secara tepat apa yang harus dilakukan.

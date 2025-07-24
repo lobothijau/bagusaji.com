@@ -11,6 +11,8 @@ favorite: true
 series_order: 20
 ---
 
+{% include series.liquid %}
+
 ## Sebelum C++, Ada C
 
 Bahasa C dikembangkan tahun 1972 oleh Dennis Ritchie di laboratorium Bell Telephone sebagai bahsa pemrograman sistem (bahasa untuk menulis sistem operasi). Tujuan utama Ritchie pada waktu itu adalah untuk menghasilkan bahasa yang minimalis yang mudah di kompilasi, memungkinkan akses yang efisien ke memori, menghasilkan kode yang efisien serta *self-contained* (tidak bergantung pada program lain). Untuk sebuah bahasa tingkat tinggi, C didesain agar memberikan kontrol yang luas pada programmer, sementara memungkinkan mereka untuk bisa menulis program yang bisa berjalan di berbagai platform. 
