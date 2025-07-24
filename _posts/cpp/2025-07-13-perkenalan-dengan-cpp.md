@@ -1,11 +1,10 @@
-
 ---
-title: Perkenalan dengan C/C++
+title: Belajar Pemrograman C++ Untuk Pemula
 date: 2025-07-08
 description: "Artikel ini memperkenalkan tentang bahasa pemrograman C dan C++ secara singkat."
 tags: cpp
 series: cpp
-series_title: Belajar Pemrograman C++ Untuk Pemula
+series_title: Perkenalan dengan C/C++
 index: 3
 favorite: true
 series_order: 20
