@@ -1,10 +1,10 @@
 ---
-title: Belajar Pemrograman C++ Untuk Pemula
+title: Perkenalan dengan C/C++ Development
 date: 2025-07-15
 description: "Kita akan mulai mengenal lingkungan development untuk bahasa pemrograman C++."
 tags: cpp
 series: cpp
-series_title: Belajar Pemrograman C++ Untuk Pemula
+series_title: Perkenalan dengan C/C++ Development
 index: 4
 favorite: true
 series_order: 25

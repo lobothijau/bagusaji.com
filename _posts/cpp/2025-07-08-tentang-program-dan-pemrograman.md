@@ -1,10 +1,10 @@
 ---
-title: Belajar Pemrograman C++ Untuk Pemula
+title: Tentang Program dan Bahasa Pemrograman
 date: 2025-07-08
 description: "Artikel ini memperkenalkan tentang program dan bahasa pemrograman secara umum sebagai dasar memahami C++."
 tags: cpp
 series: cpp
-series_title: Belajar Pemrograman C++ Untuk Pemula
+series_title: Tentang Program dan Bahasa Pemrograman
 index: 2
 favorite: true
 series_order: 15
