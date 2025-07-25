@@ -37,5 +37,3 @@ CI/CD membantu kita menemukan bug lebih cepat, mengurangi masalah integrasi, mem
 - CodeMagic: Mirip seperti BitRise juga untuk mobile development.
 
 Implementasi CI/CD sangat direkomendasikan baik untuk web maupun mobile app. Bila belum pernah punya pengalaman, saran penulis cobalah dengan GitHub Actions karena sudah tersedia langsung di GitHub. Secara pribadi penulis pernah menggunakan GitHub, GitLab, Jenkins dan BitRise. Setiap layananan punya kelebihan dan kekurangan masing-masing, tapi tujuan akhirnya sama, meminimalisir kerja developer setelah melakukan push code sampai bisa ter-deploy ke server. 
-
-https://mail.google.com/mail/u/1/#inbox/FMfcgzQbgRpRhlckHSmwzjmLQwGbLHpk
