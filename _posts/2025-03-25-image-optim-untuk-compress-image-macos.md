@@ -1,8 +1,8 @@
 ---
-title: ""
+title: "Menggunakan ImageOptim untuk Compress Gambar di macOS"
 date: 2025-03-25
-description: "Artikel ini membahas bagaimana cara menjawab soal tes untuk menjumlahkan isi dari suatu array."
-tags: javascript, interview
+description: "Artikel ini membahas bagaimana membuat ukuran gambar menjadi lebih kecil dengan di compress menggunakan ImageOptim di macOS"
+tags: macos
 ---
 
 Image merupakan salah satu jenis file yang akan sangat sering diproses disebuah halaman web. Jaman sekarang, kualitas gambar menjadi semakin bagus yang berbanding lurus dengan ukurannya. Semakin besar ukuran file tentu akan berpengaruh terhadap waktu dan kecepatan internet yang dibutuhkan untuk memuatnya. 
