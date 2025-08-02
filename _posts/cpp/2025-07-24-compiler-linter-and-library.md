@@ -1,10 +1,10 @@
 ---
-title: Belajar Pemrograman C++ Untuk Pemula
+title: "Compiler, Linter dan Library"
 date: 2025-08-02
 description: "Artikel ini membahas tentang proses kompilasi, linking dan penggunaan library dalam bahasa pemrograman C++."
 tags: cpp
 series: cpp
-series_title: Belajar Pemrograman C++ Untuk Pemula
+series_title: "Compiler, Linter dan Library"
 index: 5
 favorite: true
 series_order: 30
