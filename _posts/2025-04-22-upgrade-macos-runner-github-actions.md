@@ -7,7 +7,7 @@ tags: xcode,macos,ios,react-native
 
 Kemarin saat mengirimkan sebuah PR, penulis mendapatkan error seperti ini:
 
-![](/images/posts/macosrunner1.png)
+![](/assets/images/posts/macosrunner1.png)
 
 Pada intinya mesin runner belum bisa support Swift 6, hanya Swift 4.0, 4.2 dan 5.0. Solusinya adalah dengan mengupgrade Xcode ke versi 16 supaya mendukung Swift 6. Tapi bagaimana caranya jika sistemnya itu runner github? 
 
