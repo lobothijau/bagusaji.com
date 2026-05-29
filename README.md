@@ -4,7 +4,7 @@ Jekyll blog at [bagusaji.com](https://bagusaji.com).
 
 ## Requirements
 
-* Ruby 3.3.0
+* Ruby 3.4.5
 * Node 22
 
 ## Usage
