@@ -1,31 +1,31 @@
 ---
-title: VanHaven 3D Car Configurator (2022)
+title: VanHaven 3D Van Configurator (2023)
 date: 2023-03-27
 description: |
-  VanHaven 3D Configurator let's user build custom transporter van in a web based 3D editor.
+  360° vehicle configurator for VanHaven with full exterior and interior customisation for bespoke VW Transporter conversions, dark/light mode, and PDF brochure generation.
 layout: post
 back: /portfolios
 ---
 
 <img src="/assets/images/portfolios/vanhaven-2.webp" class="h-96 w-full object-cover"/>
 
-
-Developed the frontend for VanHaven's 3D Van Configurator, an interactive web application that enables custom van design and ordering. Built with vanilla JavaScript to deliver a seamless configuration experience integrated with Threedium's 3D rendering service.
+Built the 3D van configurator for VanHaven, a UK luxury VW Transporter conversion company. Customers design their bespoke van — selecting exterior colour, interior packs, upgrades, electrics, and heating — with full 360° rotation, multiple camera angles, dark/light mode, and a generated PDF brochure of their configuration to share or submit as an enquiry.
 
 Technical Implementation:
-- Architected a modular JavaScript application handling complex product configurations including interior layouts, exterior modifications, body colors, and electrical/heating systems
-- Engineered custom UI components without frameworks, including color pickers and feature selectors, demonstrating strong vanilla JavaScript expertise
-- Implemented seamless integration with Threedium's 3D engine service (Three.js behind the scene), managing state synchronization between UI controls and 3D model updates
-- Built responsive and intuitive interface components using pure CSS, ensuring consistent experience across devices
-- Developed robust event handling system to manage complex state changes across multiple customization categories
+- Integrated Unlimited3D (Threedium) rendering service for real-time 3D model updates
+- Built modular vanilla JavaScript frontend without frameworks, managing complex multi-category configuration state
+- Implemented in-browser PDF brochure generation from the customer's final configuration
+- Persisted configuration via localStorage so customers can return and continue
+- Engineered custom UI components (colour pickers, thumbnail selectors) in pure CSS and JS
+- Supported multiple camera views including exterior, interior, and detail angles
 
 <img src="/assets/images/portfolios/vanhaven-1.webp" class="h-96 w-full object-cover"/>
 
 Key Features:
-- Real-time 3D visualization of van customizations
-- Comprehensive configuration options for interior, exterior, electrical, and heating systems
-- Interactive color selection system for body customization
-- Thumbnail-based feature selection interface
-- Seamless integration between UI controls and 3D model updates
+- 360° real-time 3D exterior and interior visualization
+- Dark / light mode for the configurator UI
+- In-browser PDF brochure generation
+- Configuration save/restore via localStorage
+- Enquiry form submission with full spec attached
 
-The project is completed and online. Visit the completed website [here](http://configurator.vanhaven.co.uk).
+The project is completed and online. Configure your van at [configurator.vanhaven.co.uk](https://configurator.vanhaven.co.uk).

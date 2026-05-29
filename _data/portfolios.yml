@@ -6,8 +6,32 @@
     external: false
   thumbnail: fotogrit.jpg
 
-- name: 3D Basketball Court Designer (2024)
-  description: 3D Configurator web app using Three.js to design custom basketball court.
+- name: MrTafel 3D Furniture Configurator (2025)
+  description: Three 3D configurators for custom oak dining tables, coffee tables, and chairs with live pricing, AR, and WooCommerce integration.
+  link:
+    href: /portfolios/mrtafel/
+    label: "Web Development"
+    external: false
+  thumbnail: table.webp
+
+- name: Hulck 3D Trailer Configurator (2025)
+  description: Interactive 3D configurator for heavy-duty industrial trailers with 23+ configurable attributes and WordPress/WooCommerce integration.
+  link:
+    href: /portfolios/hulck/
+    label: "Web Development"
+    external: false
+  thumbnail: trailer.webp
+
+- name: Leef Doors 3D Door Configurator (2025)
+  description: 7-step guided wizard for premium slimline glass doors with live 3D preview, live pricing, and an admin dashboard.
+  link:
+    href: /portfolios/leef-doors/
+    label: "Web Development"
+    external: false
+  thumbnail: door.webp
+
+- name: AllStar Courts 3D Basketball Court Designer (2024)
+  description: Interactive 3D court designer for AllStar Courts with colour customisation, logo upload, fencing configuration, and quote request. Built with vanilla Three.js.
   link:
     href: /portfolios/court-designer/
     label: "Web Development"
@@ -22,8 +46,8 @@
     external: false
   thumbnail: dispensingrobots.jpg
 
-- name: 3D Car Configurator (2023)
-  description: VanHaven 3D Configurator let's user build custom transporter van in a web based 3D editor.
+- name: VanHaven 3D Van Configurator (2023)
+  description: 360° vehicle configurator for VanHaven with full exterior and interior customisation for bespoke VW Transporter conversions, dark/light mode, and PDF brochure generation.
   link:
     href: /portfolios/vanhaven/
     label: "Web Development"
