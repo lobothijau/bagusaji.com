@@ -70,14 +70,6 @@
     external: false
   thumbnail: balai-lelang-inspection.webp
 
-- name: Ajinomoto HTS (2021-2024)
-  description: Android Native (Kotlin) app for Ajinomoto Indonesia sales teams across the country, handling hundreds of millions rupiah in daily transactions. Released internally.
-  link:
-    href: /portfolios/ajinomoto-hts/
-    label: "Android (Kotlin)"
-    external: false
-  thumbnail: ajinomoto-hts.jpg
-
 - name: Hino in the Box
   description: React Native app for PT Hino Finance Indonesia debtors to access account information accurately, quickly and securely from their phone.
   link:
