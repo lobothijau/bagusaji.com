@@ -1,8 +1,6 @@
 source "https://rubygems.org"
 
-# Point to main until 4.4 is released for marking specific lines of code.
-# https://jekyllrb.com/docs/liquid/tags/#marking-specific-lines
-gem "jekyll", github: "jekyll/jekyll"
+gem "jekyll", "~> 4.4"
 
 # Inline SVG elements and apply CSS classes from Tailwind.
 # {% svg /assets/icons/icon.svg class="h-4 w-4" %}
