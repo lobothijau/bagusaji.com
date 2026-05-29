@@ -405,6 +405,7 @@ Sempurn~ Mari kita lanjutkan ke view. Apa yang kita butuhkan? Hanya dua hal:
 
 Template view Livewire tersebut dapat terlihat sebagai berikut:
 
+{% raw %}
 ```php
 <div class="customer-search">
     <input
@@ -429,6 +430,7 @@ Template view Livewire tersebut dapat terlihat sebagai berikut:
     @endif
 </div>
 ```
+{% endraw %}
 
 Perintah `wire:model="keyword"` menghubungkan nilali yang ditulis dengan properti `$keyword` di component kita, memastikan isi `$keyword` akan selalu sama dengan apa yang ditulis pengguna.
 
