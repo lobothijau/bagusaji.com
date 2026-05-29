@@ -22,6 +22,6 @@ I started as an outsourced Android developer, but since the company needs dedica
 
 ## Current Activity
 
-Currently I'm not working at [Logique](https://logique.co.id) anymore and now I focus on developing web and mobile apps for a company called [Fotogrit](https://fotogrit.id).
+After leaving Logique in mid-2024, I continued freelancing while exploring web development more deeply. I now work as a developer at [ModernVet](https://modernvet.co), while still taking on freelance mobile and web projects on the side.
 
-My main goal for 2025 is to explore more about web programming with Golang ran Ruby on Rails. This blog is a place for me to express my experiences in exploring web and mobile programming and various other things that are not only about programming.
+My current focus is web programming with Ruby on Rails, alongside mobile development with Flutter and React Native. This blog is a place for me to share experiences in exploring web and mobile programming and other things that are not only about programming.
