@@ -1,0 +1,15 @@
+#!/bin/bash
+set -e
+
+POSTCSS_SCRIPT=$(bundle exec ruby -e "puts Gem::Specification.find_by_name('jekyll-postcss').gem_dir + '/bin/postcss'")
+
+# Start PostCSS server directly — stdin from /dev/null so it stays alive
+node "$POSTCSS_SCRIPT" --development </dev/null &>/dev/null &
+POSTCSS_PID=$!
+
+cleanup() { kill "$POSTCSS_PID" 2>/dev/null; }
+trap cleanup EXIT
+
+until nc -z localhost 8124 2>/dev/null; do sleep 0.1; done
+
+JEKYLL_ENV=development bundle exec jekyll serve "$@"
