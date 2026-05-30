@@ -24,4 +24,4 @@ I started as an outsourced Android developer, but since the company needs dedica
 
 After leaving Logique in mid-2024, I continued freelancing while exploring web development more deeply. I now work as a developer at [ModernVet](https://modernvet.co).
 
-My current focus is web programming with Ruby on Rails, alongside mobile development with Flutter and React Native. This blog is a place for me to share experiences in exploring web and mobile programming and other things that are not only about programming.
+My current focus is web programming with Laravel, alongside mobile development with Flutter and React Native. This blog is a place for me to share experiences in exploring web and mobile programming and other things that are not only about programming.
