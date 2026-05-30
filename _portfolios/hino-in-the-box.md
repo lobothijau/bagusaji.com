@@ -2,14 +2,14 @@
 title: Hino in the Box
 date: 2023-01-01
 description: |
-  React Native app for PT Hino Finance Indonesia debtors to access account information accurately, quickly, and securely from their phone.
+  React Native app for PT Hino Finance Indonesia customers to access account information accurately, quickly, and securely from their phone.
 layout: post
 back: /portfolios
 ---
 
 <img src="/assets/images/portfolios/hino-in-the-box.jpg" class="h-96 w-full object-cover"/>
 
-Maintained and updated Hino in the Box, a React Native application for PT Hino Finance Indonesia debtors. When I took over the project at Logique, the app hadn't been updated in two years. My main task was modernizing the codebase to unblock new feature development.
+Maintained and updated Hino in the Box, a React Native application for PT Hino Finance Indonesia customers. When I took over the project at Logique, the app hadn't been updated in two years. My main task was modernizing the codebase to unblock new feature development.
 
 Technical Work:
 - Audited and updated all outdated third-party libraries, many of which had breaking API changes
