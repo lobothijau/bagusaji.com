@@ -19,14 +19,15 @@ Technical Implementation:
 - Promotion feed with detailed promo pages and interest tracking
 - Dashboard with Reminder, Promotion, Apply Now, My Truck, My Contract, and User Manager modules
 
-<img src="/assets/images/portfolios/hino-in-the-box-home.webp" class="w-full rounded-lg"/>
+<div class="grid grid-cols-3 gap-4 my-6">
+  <img src="/assets/images/portfolios/hino-in-the-box-home.webp" class="w-full rounded-lg">
+  <img src="/assets/images/portfolios/hino-in-the-box-products.webp" class="w-full rounded-lg">
+  <img src="/assets/images/portfolios/hino-in-the-box-promotion.webp" class="w-full rounded-lg">
+</div>
 
-<img src="/assets/images/portfolios/hino-in-the-box-products.webp" class="w-full rounded-lg"/>
-
-<img src="/assets/images/portfolios/hino-in-the-box-promotion.webp" class="w-full rounded-lg"/>
-
-<img src="/assets/images/portfolios/hino-in-the-box-login.webp" class="w-full rounded-lg"/>
-
-<img src="/assets/images/portfolios/hino-in-the-box-splash.webp" class="w-full rounded-lg"/>
+<div class="grid grid-cols-2 gap-4 my-6">
+  <img src="/assets/images/portfolios/hino-in-the-box-login.webp" class="w-full rounded-lg">
+  <img src="/assets/images/portfolios/hino-in-the-box-splash.webp" class="w-full rounded-lg">
+</div>
 
 Available on [App Store](https://apps.apple.com/id/app/hino-in-the-box/id1450573906) and [Play Store](https://play.google.com/store/apps/details?id=com.hino.hitb).
