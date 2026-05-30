@@ -1,12 +1,5 @@
-- name: Fotogrit Corporate Website (2025)
-  description: Fotogrit is a company that provides photography and event related services for young sports enthusiasts.
-  link:
-    href: /portfolios/fotogrit-corporate-website/
-    label: "Next.js"
-    external: false
-  thumbnail: fotogrit.jpg
-
 - name: MrTafel 3D Furniture Configurator (2025)
+  category: 3d
   description: Three 3D configurators for custom oak dining tables, coffee tables, and chairs with live pricing, AR, and WooCommerce integration.
   link:
     href: /portfolios/mrtafel/
@@ -15,6 +8,7 @@
   thumbnail: table.webp
 
 - name: Hulck 3D Trailer Configurator (2025)
+  category: 3d
   description: Interactive 3D configurator for heavy-duty industrial trailers with 23+ configurable attributes and WordPress/WooCommerce integration.
   link:
     href: /portfolios/hulck/
@@ -23,6 +17,7 @@
   thumbnail: trailer.webp
 
 - name: Leef Doors 3D Door Configurator (2025)
+  category: 3d
   description: 7-step guided wizard for premium slimline glass doors with live 3D preview, live pricing, and an admin dashboard.
   link:
     href: /portfolios/leef-doors/
@@ -31,6 +26,7 @@
   thumbnail: door.webp
 
 - name: AllStar Courts 3D Basketball Court Designer (2024)
+  category: 3d
   description: Interactive 3D court designer for AllStar Courts with colour customisation, logo upload, fencing configuration, and quote request. Built with vanilla Three.js.
   link:
     href: /portfolios/court-designer/
@@ -38,15 +34,8 @@
     external: false
   thumbnail: court.jpg
 
-- name: Dispensing Robotics (2023)
-  description: Fullstack web development for dispensingrobotics.com, an industrial based company with global customer.
-  link:
-    href: /portfolios/dispensing-robotics/
-    label: "Laravel Development"
-    external: false
-  thumbnail: dispensingrobots.jpg
-
 - name: VanHaven 3D Van Configurator (2023)
+  category: 3d
   description: 360° vehicle configurator for VanHaven with full exterior and interior customisation for bespoke VW Transporter conversions, dark/light mode, and PDF brochure generation.
   link:
     href: /portfolios/vanhaven/
@@ -54,8 +43,27 @@
     external: false
   thumbnail: vanhaven-2.webp
 
+- name: Fotogrit Corporate Website (2025)
+  category: web
+  description: Fotogrit is a company that provides photography and event related services for young sports enthusiasts.
+  link:
+    href: /portfolios/fotogrit-corporate-website/
+    label: "Next.js"
+    external: false
+  thumbnail: fotogrit.jpg
+
+- name: Dispensing Robotics (2023)
+  category: web
+  description: Fullstack web development for dispensingrobotics.com, an industrial based company with global customer.
+  link:
+    href: /portfolios/dispensing-robotics/
+    label: "Laravel Development"
+    external: false
+  thumbnail: dispensingrobots.jpg
+
 - name: Hino-Connect (2020-2024)
-  description: Hino-Connect is a fleet management app to monitor truck movement and other data. 
+  category: mobile
+  description: Hino-Connect is a fleet management app to monitor truck movement and other data.
   link:
     href: /portfolios/hino-connect/
     label: "Android (Kotlin)"
@@ -63,6 +71,7 @@
   thumbnail: hino-connect.jpeg
 
 - name: Real Time Auction (2022-2023)
+  category: mobile
   description: JBA Indonesia is a Flutter built project for Android and iOS to enable online auction right from your phone from all over Indonesia.
   link:
     href: /portfolios/jba-indonesia/
@@ -71,7 +80,8 @@
   thumbnail: jba-splash.webp
 
 - name: Online-based Fiduciary (2022-2023)
-  description: Gadai ValueMax is a Flutter built project for Android and iOS to help customer perform fiduciary from the comfort of their home. 
+  category: mobile
+  description: Gadai ValueMax is a Flutter built project for Android and iOS to help customer perform fiduciary from the comfort of their home.
   link:
     href: /portfolios/gadai-valuemax/
     label: Flutter
@@ -79,6 +89,7 @@
   thumbnail: gadai-front.webp
 
 - name: Heavy Equipment Inspection (2021-2022)
+  category: mobile
   description: BUMA Digiman is an Android only apps built with Kotlin to digitalized mining-vehicle inspection workflow.
   link:
     href: /portfolios/buma-digiman/
@@ -87,6 +98,7 @@
   thumbnail: digiman-form.webp
 
 - name: Car & Bike Inspection (2022-2023)
+  category: mobile
   description: "Universal Collection Inspection app digitalize car & bike inspection process with beautiful UI and smooth experience."
   link:
     href: /portfolios/universal-lelang-inspection/
@@ -95,6 +107,7 @@
   thumbnail: balai-lelang-inspection.webp
 
 - name: Hino in the Box
+  category: mobile
   description: React Native app for PT Hino Finance Indonesia debtors to access account information accurately, quickly and securely from their phone.
   link:
     href: /portfolios/hino-in-the-box/
@@ -103,7 +116,8 @@
   thumbnail: hino-in-the-box.jpg
 
 - name: Attendace Management App (2021-2022)
-  description: Dokodemo-Kerja helping companies manage their employee's remote work record with a desktop and mobile app. 
+  category: mobile
+  description: Dokodemo-Kerja helping companies manage their employee's remote work record with a desktop and mobile app.
   link:
     href: /portfolios/dokodemo-kerja/
     label: React Native
@@ -111,7 +125,8 @@
   thumbnail: dokodemo-kerja-record.webp
 
 - name: Buku Catur (2020)
-  description: Digital chess book with interactive board, build with Kotlin for Android native. 
+  category: mobile
+  description: Digital chess book with interactive board, build with Kotlin for Android native.
   link:
     href: /portfolios/buku-catur/
     label: "Android (Kotlin)"
@@ -119,6 +134,7 @@
   thumbnail: bukucatur-1.jpg
 
 - name: Japanese-Indonesia Offline Dictionary (2020)
+  category: mobile
   description: Android-based offline Japanese-Indonesian dictionary to help learner browse words using katakana, hiragana or kanji.
   link:
     href: /portfolios/jiten/
