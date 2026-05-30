@@ -30,4 +30,4 @@ Technical Implementation:
   <img src="/assets/images/portfolios/hino-in-the-box-splash.webp" class="w-full rounded-lg">
 </div>
 
-Available on [App Store](https://apps.apple.com/id/app/hino-in-the-box/id1450573906) and [Play Store](https://play.google.com/store/apps/details?id=com.hino.hitb).
+Available on [App Store](https://apps.apple.com/id/app/hino-in-the-box-customer/id1488293748) and [Play Store](https://play.google.com/store/apps/details?id=com.hinoapp&hl=id).
