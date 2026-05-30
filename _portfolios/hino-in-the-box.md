@@ -9,15 +9,14 @@ back: /portfolios
 
 <img src="/assets/images/portfolios/hino-in-the-box.jpg" class="h-96 w-full object-cover"/>
 
-Developed Hino in the Box, a specialized React Native application for PT Hino Finance Indonesia. The app gives debtors a convenient way to access their account information — accurately, quickly, and securely — directly from their mobile device.
+Maintained and updated Hino in the Box, a React Native application for PT Hino Finance Indonesia debtors. When I took over the project at Logique, the app hadn't been updated in two years. My main task was modernizing the codebase to unblock new feature development.
 
-Technical Implementation:
-- Built with React Native for cross-platform release on both Android and iOS
-- Multi-language support (English / Indonesian) from the splash screen
-- Integrated with PT Hino Finance Indonesia's backend services for real-time account and contract data
-- Product catalogue browsing by truck category (Dutro, Ranger, Profia) with search
-- Promotion feed with detailed promo pages and interest tracking
-- Dashboard with Reminder, Promotion, Apply Now, My Truck, My Contract, and User Manager modules
+Technical Work:
+- Audited and updated all outdated third-party libraries, many of which had breaking API changes
+- Bumped the React Native version — a significant undertaking given the number of dependencies that required individual resolution
+- Resolved native build issues on both Android and iOS that had accumulated from years of SDK and OS updates
+- Delivered new features on top of the modernized codebase
+- App features: multi-language support, product catalogue (Dutro, Ranger, Profia), promotion feed, contract management, truck tracker, and Apply Now flow
 
 <div class="grid grid-cols-3 gap-4 my-6">
   <img src="/assets/images/portfolios/hino-in-the-box-home.webp" class="w-full rounded-lg">

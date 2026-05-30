@@ -108,7 +108,7 @@
 
 - name: Hino in the Box
   category: mobile
-  description: React Native app for PT Hino Finance Indonesia debtors to access account information accurately, quickly and securely from their phone.
+  description: Maintained and modernized a legacy React Native app for PT Hino Finance Indonesia — upgrading outdated libraries, bumping React Native version, and delivering new features.
   link:
     href: /portfolios/hino-in-the-box/
     label: React Native
