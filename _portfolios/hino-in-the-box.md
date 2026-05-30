@@ -18,15 +18,8 @@ Technical Work:
 - Delivered new features on top of the modernized codebase
 - App features: multi-language support, product catalogue (Dutro, Ranger, Profia), promotion feed, contract management, truck tracker, and Apply Now flow
 
-<div class="grid grid-cols-3 gap-4 my-6">
-  <img src="/assets/images/portfolios/hino-in-the-box-home.webp" class="w-full rounded-lg">
-  <img src="/assets/images/portfolios/hino-in-the-box-products.webp" class="w-full rounded-lg">
-  <img src="/assets/images/portfolios/hino-in-the-box-promotion.webp" class="w-full rounded-lg">
-</div>
+<img src="/assets/images/portfolios/hino-in-the-box-screens-1.webp" class="w-full rounded-lg my-6"/>
 
-<div class="grid grid-cols-2 gap-4 my-6">
-  <img src="/assets/images/portfolios/hino-in-the-box-login.webp" class="w-full rounded-lg">
-  <img src="/assets/images/portfolios/hino-in-the-box-splash.webp" class="w-full rounded-lg">
-</div>
+<img src="/assets/images/portfolios/hino-in-the-box-screens-2.webp" class="w-full rounded-lg my-6"/>
 
 Available on [App Store](https://apps.apple.com/id/app/hino-in-the-box-customer/id1488293748) and [Play Store](https://play.google.com/store/apps/details?id=com.hinoapp&hl=id).
