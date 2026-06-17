@@ -1,7 +1,7 @@
 ---
 layout: container
-title: Bagus Aji, Fullstack Developer
-description: Writing as a way to document my learning.
+title: Bagus Aji, Frontend Engineer
+description: I build modern web apps with React & Next.js, and interactive 3D product configurators with Three.js.
 permalink: /
 ---
 
@@ -9,14 +9,14 @@ permalink: /
   <div class="lg:px-20">
     <div class="max-w-[250px] px-2.5 lg:max-w-[300px]">
       <figure>
-        <img src="/assets/images/bagus.webp" width="300" height="300" alt="Bagus Ajis" class="aspect-square sm:-rotate-3 rounded-2xl bg-gray-100 object-cover">
+        <img src="/assets/images/bagus.webp" width="300" height="300" alt="Bagus Aji" class="aspect-square sm:-rotate-3 rounded-2xl bg-gray-100 object-cover">
         <figcaption class="sr-only">Bagus Aji</figcaption>
       </figure>
     </div>
   </div>
   <div class="lg:row-span-2">
     <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-      <span class="block">I'm Bagus Aji,</span> a <span class="font-bold text-gray-900">fullstack developer</span>, <span class="font-bold text-gray-900">writer</span> and a <span class="font-bold text-gray-900">teacher</span>!
+      <span class="block">I'm Bagus Aji,</span> a <span class="font-bold text-gray-900">Frontend Engineer</span> building <span class="font-bold text-gray-900">React apps</span> and interactive <span class="font-bold text-gray-900">3D web experiences</span>.
     </h1>
     <p class="mt-6 text-2xl text-gray-600 font-medium">{{ page.description }}</p>
     <div class="mt-6 flex gap-6">
@@ -28,6 +28,33 @@ permalink: /
     </div>
   </div>
 </div>
+
+<!-- Featured Work -->
+<div class="mt-16 md:mt-20">
+  <div class="flex items-baseline justify-between mb-8">
+    <h2 class="text-2xl font-bold tracking-tight text-gray-900">Featured Work</h2>
+    <a href="/portfolios/" class="text-sm font-medium text-primary-600 hover:text-primary-700">View all projects →</a>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    {% assign featured = site.data.portfolios | where: "category", "3d" %}
+    {% for portfolio in featured limit: 3 %}
+      <a href="{{ portfolio.link.href }}" class="group block">
+        <div class="relative aspect-video overflow-hidden rounded-lg mb-4">
+          <img
+            src="/assets/images/portfolios/{{ portfolio.thumbnail }}"
+            alt="{{ portfolio.name }}"
+            loading="lazy"
+            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+          >
+        </div>
+        <h3 class="text-lg font-semibold text-gray-900 mb-1 group-hover:text-primary-600 transition-colors">{{ portfolio.name }}</h3>
+        <p class="text-gray-600 text-sm">{{ portfolio.description }}</p>
+      </a>
+    {% endfor %}
+  </div>
+</div>
+
+<!-- Offerings -->
 <div class="mt-16 md:mt-20 -mx-4">
   <div class="grid lg:grid-cols-3 lg:justify-center gap-8 py-4">
     {% for offering in site.data.offerings %}

@@ -1,7 +1,7 @@
 # Jekyll configuration
 url: https://bagusaji.com
 title: Bagus Aji Santoso
-description:
+description: Frontend Engineer building React & Next.js apps and interactive 3D product configurators with Three.js. Based in Indonesia, open to relocation.
 author:
   name: Bagus Aji Santoso
   email: bagus@bagusaji.com
@@ -27,7 +27,16 @@ collections:
   portfolios:
     output: true
     permalink: /portfolios/:title/
+  books:
+    output: true
+    permalink: /books/:path/
 defaults:
+  - scope:
+      path: ""
+      type: books
+    values:
+      layout: book
+      back: /books
   - scope:
       path: _posts/
       type: posts
