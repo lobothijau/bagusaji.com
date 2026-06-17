@@ -42,8 +42,8 @@ defaults:
       type: posts
     values:
       layout: post
-      back: /id/blog
-      permalink: /id/blog/:title/
+      back: /id/articles
+      permalink: /id/articles/:title/
       lang: id
       preview_links_template_id: 999
 
