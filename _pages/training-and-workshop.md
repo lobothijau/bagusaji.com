@@ -5,6 +5,7 @@ description: |
 permalink: /training-and-workshop/
 layout: post
 back: /
+lang: id
 ---
 
 <p class="lead">

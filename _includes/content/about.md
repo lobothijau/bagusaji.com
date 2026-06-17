@@ -1,27 +1,17 @@
-<p class="lead">I help clients confidently launch Android & iOS apps in the App Store with their technology of choice.</p>
-
-My programming journey started in 2012 when I was a freshman in Computer Science Education at [Indonesia University of Education](https://upi.edu/). I was taking Algorithm I with the C Programming Language. Coming from a background of vocatinal high school with some basic computing skills, learing to program was an interesting experience for me. 
-
-Fast forward to 2017, due to my skills in writing programming I was invited to join the company of my senior as an Editor. Here I work for about a year before transitioning to a trainer. 
+I've been building on the web since 2015. Today my focus is interactive 3D configurators built with Three.js and React — the kind of web experience that helps companies sell products online in a way static images never could.
 
 ## Codepolitan
 
-Codepolitan was my very first company I joined before graduation ceremony. At this company I work with multiple roles and my first role was a writer plus editor. I wrote programming tutorials and editing community submitted articles. One year at the company, they started an offline-based training with Android class and I moved to a trainer role.
-
-Back then when I teach my first class, I'm not actually proficient in Android development. I know how to develop an app, but teaching it to others was still difficult (since I'm not actually understand many things). But, due to the needs to keep learning and upgrading my skills, slowly I grasp the secrets of native Android development. 
-
-## Freelancing
-
-Beside my main job as a trainer, I also started freelancing. I built apps for clients mostly through word-of-mouth referral. Fortunately, my main job requires me to meet new peoples with different background with a needs for an Android app development. I got many opportunities from them. One of my student becoming my supervisor at current company. 
+My professional career started at Codepolitan, an Indonesian programming education company. I joined as a writer and editor, creating programming tutorials and editing community-submitted articles. When the company launched an Android training programme, I moved into a trainer role — teaching hundreds of developers and writing a programming book in the process.
 
 ## Logique
 
-After three years working, finally I changed career from a trainer to a fulltime mobile developer. I got the job through my connection with a former student at previous work. 
+After three years at Codepolitan, I joined Logique Digital Indonesia as a full-time mobile developer. Over four years I worked on applications for Japanese and multinational clients — projects that required close collaboration across cultures and tight engineering standards.
 
-I started as an outsourced Android developer, but since the company needs dedicated developer then I did some interviews before securing the job. 
+## Independent
 
-## Current Activity
+Since mid-2024 I've been fully independent, working with clients worldwide on 3D web configurators and frontend engineering projects. Alongside that, I'm a developer at [ModernVet](https://modernvet.co), a veterinary platform serving clinics across Southeast Asia.
 
-After leaving Logique in mid-2024, I continued freelancing while exploring web development more deeply. I now work as a developer at [ModernVet](https://modernvet.co).
+I specialise in React, Next.js, Three.js, and React Three Fiber. I'm comfortable across the stack — from WebGL shaders to Express APIs — but the frontend is where I do my best work.
 
-My current focus is web programming with Laravel, alongside mobile development with Flutter and React Native. This blog is a place for me to share experiences in exploring web and mobile programming and other things that are not only about programming.
+I'm actively planning relocation to Kuala Lumpur, and I'm open to remote roles across the Asia-Pacific region.

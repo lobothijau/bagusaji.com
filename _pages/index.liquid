@@ -1,11 +1,12 @@
 ---
 layout: container
-title: Bagus Aji, Frontend Engineer
-description: I build modern web apps with React & Next.js, and interactive 3D product configurators with Three.js.
+title: Bagus Aji — Frontend Engineer & 3D Web Developer
+description: Frontend engineer with 8 years of experience. I build interactive 3D web experiences and React/Next.js applications for companies that want to stand out.
 permalink: /
 ---
 
-<div class="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
+<!-- Hero -->
+<div class="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:rows-[auto_1fr] lg:gap-y-12">
   <div class="lg:px-20">
     <div class="max-w-[250px] px-2.5 lg:max-w-[300px]">
       <figure>
@@ -16,12 +17,18 @@ permalink: /
   </div>
   <div class="lg:row-span-2">
     <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-      <span class="block">I'm Bagus Aji,</span> a <span class="font-bold text-gray-900">Frontend Engineer</span> building <span class="font-bold text-gray-900">React apps</span> and interactive <span class="font-bold text-gray-900">3D web experiences</span>.
+      I build interactive <span class="font-bold text-gray-900">3D web experiences</span> for companies that want to stand out.
     </h1>
-    <p class="mt-6 text-2xl text-gray-600 font-medium">{{ page.description }}</p>
-    <div class="mt-6 flex gap-6">
+    <p class="mt-6 text-xl text-gray-600">
+      Frontend engineer with 8 years of experience. I specialize in React, Next.js, and Three.js — helping SaaS companies, e-commerce brands, and industrial clients turn complex products into engaging 3D configurators their customers actually use.
+    </p>
+    <div class="mt-8 flex flex-wrap gap-4">
+      <a href="#work" class="button button-primary">See my work ↓</a>
+      <a href="#contact" class="button button-secondary">Work with me →</a>
+    </div>
+    <div class="mt-8 flex gap-6">
       {% for social in site.data.socials %}
-        <a href="{{ social.href }}" target="_blank" title="{{ social.title }}" aria-label="{{ social.title.titleize }}" class="group cursor-pointer -m-1 p-1">
+        <a href="{{ social.href }}" target="_blank" title="{{ social.title }}" aria-label="{{ social.title }}" class="group cursor-pointer -m-1 p-1">
           {% svg "/assets/icons/{{ social.icon }}" class="h-6 w-6 fill-gray-500 transition group-hover:fill-gray-600" %}
         </a>
       {% endfor %}
@@ -29,36 +36,104 @@ permalink: /
   </div>
 </div>
 
-<!-- Featured Work -->
-<div class="mt-16 md:mt-20">
-  <div class="flex items-baseline justify-between mb-8">
-    <h2 class="text-2xl font-bold tracking-tight text-gray-900">Featured Work</h2>
-    <a href="/portfolios/" class="text-sm font-medium text-primary-600 hover:text-primary-700">View all projects →</a>
+<!-- Selected Work -->
+<div id="work" class="mt-24 md:mt-28 scroll-mt-8">
+  <h2 class="text-2xl font-bold tracking-tight text-gray-900">Selected Work</h2>
+  <div class="mt-8 grid grid-cols-1 gap-x-8 gap-y-12 md:grid-cols-2 lg:grid-cols-3">
+
+    <a href="/portfolios/vanhaven/" class="group block">
+      <div class="relative aspect-video overflow-hidden rounded-lg mb-4">
+        <img src="/assets/images/portfolios/vanhaven-2.webp" alt="VanHaven 3D Van Configurator" loading="lazy" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+      </div>
+      <h3 class="text-lg font-semibold text-gray-900 mb-1 group-hover:text-primary-600 transition-colors">VanHaven — 3D Van Configurator</h3>
+      <p class="text-gray-600 text-sm mb-2">360° vehicle configurator with full exterior and interior customization for bespoke VW Transporter conversions. Dark/light mode, real-time 3D preview, and PDF brochure generation.</p>
+      <p class="text-xs text-gray-400 font-medium">Three.js · JavaScript · WooCommerce</p>
+    </a>
+
+    <a href="/portfolios/mrtafel/" class="group block">
+      <div class="relative aspect-video overflow-hidden rounded-lg mb-4">
+        <img src="/assets/images/portfolios/table.webp" alt="MrTafel 3D Furniture Configurator" loading="lazy" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+      </div>
+      <h3 class="text-lg font-semibold text-gray-900 mb-1 group-hover:text-primary-600 transition-colors">MrTafel — 3D Furniture Configurator</h3>
+      <p class="text-gray-600 text-sm mb-2">Three interactive configurators for custom oak dining tables, coffee tables, and chairs. Live pricing, AR preview, and WooCommerce integration.</p>
+      <p class="text-xs text-gray-400 font-medium">Three.js · JavaScript · AR · WooCommerce</p>
+    </a>
+
+    <a href="/portfolios/hulck/" class="group block">
+      <div class="relative aspect-video overflow-hidden rounded-lg mb-4">
+        <img src="/assets/images/portfolios/trailer.webp" alt="Hulck 3D Trailer Configurator" loading="lazy" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+      </div>
+      <h3 class="text-lg font-semibold text-gray-900 mb-1 group-hover:text-primary-600 transition-colors">Hulck — 3D Trailer Configurator</h3>
+      <p class="text-gray-600 text-sm mb-2">Interactive configurator for heavy-duty industrial trailers. 23+ configurable attributes, real-time preview, and WordPress/WooCommerce integration.</p>
+      <p class="text-xs text-gray-400 font-medium">Three.js · JavaScript · WordPress</p>
+    </a>
+
+    <a href="/portfolios/court-designer/" class="group block">
+      <div class="relative aspect-video overflow-hidden rounded-lg mb-4">
+        <img src="/assets/images/portfolios/court.jpg" alt="AllStar Courts 3D Basketball Court Designer" loading="lazy" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+      </div>
+      <h3 class="text-lg font-semibold text-gray-900 mb-1 group-hover:text-primary-600 transition-colors">AllStar Courts — 3D Basketball Court Designer</h3>
+      <p class="text-gray-600 text-sm mb-2">Full court designer with color customization, logo upload, fencing configuration, and quote request. Built from scratch with vanilla Three.js.</p>
+      <p class="text-xs text-gray-400 font-medium">Three.js · JavaScript · Canvas</p>
+    </a>
+
+    <a href="/portfolios/leef-doors/" class="group block">
+      <div class="relative aspect-video overflow-hidden rounded-lg mb-4">
+        <img src="/assets/images/portfolios/door.webp" alt="Leef Doors 3D Door Configurator" loading="lazy" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+      </div>
+      <h3 class="text-lg font-semibold text-gray-900 mb-1 group-hover:text-primary-600 transition-colors">Leef Doors — 3D Door Configurator</h3>
+      <p class="text-gray-600 text-sm mb-2">7-step guided wizard for premium slimline glass doors. Live 3D preview, dynamic pricing, and admin dashboard for product management.</p>
+      <p class="text-xs text-gray-400 font-medium">Three.js · JavaScript · WordPress</p>
+    </a>
+
   </div>
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-    {% assign featured = site.data.portfolios | where: "category", "3d" %}
-    {% for portfolio in featured limit: 3 %}
-      <a href="{{ portfolio.link.href }}" class="group block">
-        <div class="relative aspect-video overflow-hidden rounded-lg mb-4">
-          <img
-            src="/assets/images/portfolios/{{ portfolio.thumbnail }}"
-            alt="{{ portfolio.name }}"
-            loading="lazy"
-            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-          >
-        </div>
-        <h3 class="text-lg font-semibold text-gray-900 mb-1 group-hover:text-primary-600 transition-colors">{{ portfolio.name }}</h3>
-        <p class="text-gray-600 text-sm">{{ portfolio.description }}</p>
-      </a>
-    {% endfor %}
+  <div class="mt-8">
+    <a href="/portfolios/" class="text-sm font-medium text-primary-600 hover:text-primary-700">View all projects →</a>
   </div>
 </div>
 
-<!-- Offerings -->
-<div class="mt-16 md:mt-20 -mx-4">
-  <div class="grid lg:grid-cols-3 lg:justify-center gap-8 py-4">
-    {% for offering in site.data.offerings %}
-      {% include card.liquid object=offering %}
-    {% endfor %}
+<!-- What I Do -->
+<div class="mt-24 md:mt-28">
+  <h2 class="text-2xl font-bold tracking-tight text-gray-900">What I Do</h2>
+  <div class="mt-8 grid lg:grid-cols-3 gap-8">
+    <div class="flex flex-col">
+      <h3 class="text-lg font-semibold text-gray-900">3D Product Configurators</h3>
+      <p class="mt-2 text-gray-600 flex-1">Your customers customize your product in real-time 3D, directly on your website. I handle everything — 3D rendering, UI, backend integration, and deployment. Flat-rate projects starting at $5K USD, delivered in 3–5 weeks.</p>
+      <a href="/services/" class="mt-4 text-sm font-medium text-primary-600 hover:text-primary-700">Learn more →</a>
+    </div>
+    <div class="flex flex-col">
+      <h3 class="text-lg font-semibold text-gray-900">Frontend Engineering</h3>
+      <p class="mt-2 text-gray-600 flex-1">React, Next.js, TypeScript. I build fast, maintainable web applications for startups and SaaS companies. From marketing sites to full products.</p>
+      <a href="/services/" class="mt-4 text-sm font-medium text-primary-600 hover:text-primary-700">Learn more →</a>
+    </div>
+    <div class="flex flex-col">
+      <h3 class="text-lg font-semibold text-gray-900">Mobile Development</h3>
+      <p class="mt-2 text-gray-600 flex-1">React Native and Flutter. I've published 10+ apps on the App Store and Google Play Store. Available for mobile projects that complement your web presence.</p>
+      <a href="/services/" class="mt-4 text-sm font-medium text-primary-600 hover:text-primary-700">Learn more →</a>
+    </div>
   </div>
+</div>
+
+<!-- About -->
+<div class="mt-24 md:mt-28">
+  <h2 class="text-2xl font-bold tracking-tight text-gray-900">About</h2>
+  <div class="mt-6 max-w-2xl space-y-4 text-gray-600">
+    <p>I'm Bagus Aji, a frontend engineer based in Bandung, Indonesia. I've been building on the web since 2015.</p>
+    <p>Before going fully independent, I spent 4 years at Logique Digital Indonesia as a mobile developer working with Japanese and multinational clients, and 3 years at Codepolitan as a programming trainer and author — I've written a programming book and trained hundreds of developers.</p>
+    <p>Today I work with clients worldwide. My focus is interactive 3D configurators built with Three.js and React — the kind of web experience that helps companies sell products online in a way static images never could.</p>
+    <p>I'm actively planning relocation to Kuala Lumpur, and I'm open to remote roles across the Asia-Pacific region.</p>
+  </div>
+  <a href="/about/" class="mt-6 inline-block text-sm font-medium text-primary-600 hover:text-primary-700">More about me →</a>
+</div>
+
+<!-- Contact -->
+<div id="contact" class="mt-24 md:mt-28 scroll-mt-8">
+  <h2 class="text-2xl font-bold tracking-tight text-gray-900">Ready to talk about your project?</h2>
+  <p class="mt-4 text-gray-600">Email me at <a href="mailto:gusajisan@gmail.com" class="text-primary-600 hover:text-primary-700 font-medium">gusajisan@gmail.com</a> or find me on:</p>
+  <ul class="mt-6 space-y-2 text-gray-600">
+    <li><a href="https://github.com/lobothijau" target="_blank" class="hover:text-primary-600">GitHub: github.com/lobothijau</a></li>
+    <li><a href="https://www.linkedin.com/in/baguzzzaji" target="_blank" class="hover:text-primary-600">LinkedIn: linkedin.com/in/baguzzzaji</a></li>
+    <li><a href="https://bagusaji.com" class="hover:text-primary-600">Website: bagusaji.com</a></li>
+  </ul>
+  {% comment %}TODO: Add Calendly link — placeholder: <a href="https://calendly.com/YOURHANDLE">Book a call</a>{% endcomment %}
 </div>

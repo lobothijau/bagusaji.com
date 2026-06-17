@@ -1,32 +1,34 @@
 ---
 title: Articles
-description: Tulisan saya tentang pengembangan aplikasi mobile dan web.
+description: Writing on React, Three.js, frontend engineering, and building interactive 3D web experiences.
 layout: simple
-layout_title: Tulisan saya tentang pengembangan aplikasi mobile dan web.
-layout_description: Baca artikel pilihan saya tentang pengembangan aplikasi mobile dan web.
+layout_title: Articles
+layout_description: Writing on React, Three.js, frontend engineering, and interactive 3D web experiences.
 ---
 
+{% assign english_posts = site.posts | where_exp: "p", "p.lang != 'id'" %}
+
+{% if english_posts.size > 0 %}
 <div class="flex max-w-3xl flex-col space-y-12">
-  {% assign post = site.posts.first %}
+  {% assign post = english_posts.first %}
   {% include post.liquid post=post badge="new" %}
   <div class="space-y-16">
-    {% assign favorites = site.posts | where: "favorite", true | sort: "index" %}
+    {% assign favorites = english_posts | where: "favorite", true | sort: "index" %}
     {% for post in favorites %}
       {% include post.liquid post=post badge="favorite" %}
     {% endfor %}
   </div>
-</div>
-{% comment %}
-<div class="max-w-prose">
-  {% include newsletter/cta.liquid %}
-</div>
-{% endcomment %}
-<p class="mt-16 text-lg text-gray-600 md:mt-24">Baca juga <strong>{{ site.posts.size }} artikel</strong> lain yang pernah saya publikasikan di blog ini.</p>
-<div class="mt-8 md:border-l md:border-gray-100 md:pl-6 md:mt-16">
-  <div class="flex max-w-3xl flex-col space-y-16">
-    {% assign posts = site.posts %}
-    {% for post in posts %}
-      {% include post.liquid post=post date=true %}
-    {% endfor %}
+  <div class="mt-8 md:border-l md:border-gray-100 md:pl-6">
+    <div class="flex max-w-3xl flex-col space-y-16">
+      {% for post in english_posts %}
+        {% include post.liquid post=post date=true %}
+      {% endfor %}
+    </div>
   </div>
 </div>
+{% else %}
+<div class="max-w-2xl">
+  <p class="text-lg text-gray-600">English articles are coming soon. In the meantime, you can read my existing writing in Bahasa Indonesia.</p>
+  <a href="/id/blog/" class="mt-4 inline-block text-sm font-medium text-primary-600 hover:text-primary-700">Read Indonesian articles →</a>
+</div>
+{% endif %}

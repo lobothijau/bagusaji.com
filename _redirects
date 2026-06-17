@@ -1,0 +1,5 @@
+---
+---
+{% comment %}Netlify _redirects — 301s from old /:slug/ to new /id/blog/:slug/{% endcomment %}
+{% for post in site.posts %}/{{ post.slug }}/    {{ post.url }}    301
+{% endfor %}/portfolios/dispensing-robotics/    /portfolios/    301

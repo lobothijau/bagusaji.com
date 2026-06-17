@@ -1,0 +1,30 @@
+---
+title: Artikel
+description: Tulisan saya tentang pengembangan aplikasi mobile dan web.
+layout: simple
+layout_title: Tulisan saya
+layout_description: Artikel tentang pengembangan mobile dan web.
+permalink: /id/blog/
+---
+
+<div class="flex max-w-3xl flex-col space-y-12">
+  {% assign id_posts = site.posts | where: "lang", "id" %}
+  {% assign first_post = id_posts.first %}
+  {% if first_post %}
+    {% include post.liquid post=first_post badge="new" %}
+  {% endif %}
+  <div class="space-y-16">
+    {% assign favorites = id_posts | where: "favorite", true | sort: "index" %}
+    {% for post in favorites %}
+      {% include post.liquid post=post badge="favorite" %}
+    {% endfor %}
+  </div>
+</div>
+<p class="mt-16 text-lg text-gray-600 md:mt-24">Baca juga <strong>{{ id_posts.size }} artikel</strong> lain yang pernah saya publikasikan di blog ini.</p>
+<div class="mt-8 md:border-l md:border-gray-100 md:pl-6 md:mt-16">
+  <div class="flex max-w-3xl flex-col space-y-16">
+    {% for post in id_posts %}
+      {% include post.liquid post=post date=true %}
+    {% endfor %}
+  </div>
+</div>

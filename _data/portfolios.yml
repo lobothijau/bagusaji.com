@@ -52,15 +52,6 @@
     external: false
   thumbnail: fotogrit.jpg
 
-- name: Dispensing Robotics (2023)
-  category: web
-  description: Fullstack web development for dispensingrobotics.com, an industrial based company with global customer.
-  link:
-    href: /portfolios/dispensing-robotics/
-    label: "Laravel Development"
-    external: false
-  thumbnail: dispensingrobots.jpg
-
 - name: Hino-Connect (2020-2024)
   category: mobile
   description: Hino-Connect is a fleet management app to monitor truck movement and other data.

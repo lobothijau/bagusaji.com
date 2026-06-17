@@ -1,28 +1,27 @@
-- title: Zero to Production
-  best_if: you need a brand new app and want me to do everything.
-  you_get: a developer (me) to build your app and release it to public.
-  cta: Chat with Bagus to get started
+- title: 3D Product Configurators
+  best_if: you need an interactive 3D configurator on your website.
+  you_get: a fully custom configurator — 3D rendering, UI, backend integration, and deployment.
+  cta: Email Bagus to get started
   description: |
-    I write your mobile app with the techology of choice. The app will be 
-    integrated with your already built backend APIs or we can also build 
-    the web from scratch.
-  href: https://wa.me/6281214632571
+    Your customers customize your product in real-time 3D, directly on your website.
+    I handle everything — 3D rendering, UI, backend integration, and deployment.
+    Flat-rate projects starting at $5K USD, delivered in 3–5 weeks.
+  href: mailto:gusajisan@gmail.com
 
-- title: Maintenance and support
-  best_if: you need a maintenance and support for your app.
-  you_get: a developer (me) to maintain and support your app.
-  cta: Chat with Bagus to get started
+- title: Frontend Engineering
+  best_if: you need fast, maintainable web applications built with React or Next.js.
+  you_get: a frontend developer to build or improve your web product from scratch.
+  cta: Email Bagus to get started
   description: |
-    I will maintain and support your app. I will also help you to fix bugs 
-    and adding new features or improvements.
-  href: https://wa.me/6281214632571
+    React, Next.js, TypeScript. I build fast, maintainable web applications for
+    startups and SaaS companies. From marketing sites to full products.
+  href: mailto:gusajisan@gmail.com
 
-- title: Private training / workshop
-  best_if: you want to learn mobile application development
-  you_get: a custom workshop tailored to your unique needs
-  cta: Plan a training with Bagus
+- title: Mobile Development
+  best_if: you need iOS and Android apps that complement your web presence.
+  you_get: a developer with 10+ published apps on the App Store and Google Play.
+  cta: Email Bagus to get started
   description: |
-    Workshops can be arranged as virtual or in-person trianing. It can be a 
-    half-day sessions of multi-day events. We will plan the syllabus for 
-    the sessions together. 
-  href: https://wa.me/6281214632571
+    React Native and Flutter. I've published 10+ apps on the App Store and Google Play Store.
+    Available for mobile projects that complement your web presence.
+  href: mailto:gusajisan@gmail.com
