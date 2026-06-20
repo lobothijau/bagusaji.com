@@ -5,51 +5,67 @@ layout: simple
 ---
 
 {% assign cat_keys = "3d,web,mobile" | split: "," %}
-{% assign cat_titles = "3D & Configurators,Web Development,Mobile Development" | split: "," %}
+{% assign cat_titles = "3D & Configurators,Web Development,Mobile" | split: "," %}
 
 {% for key in cat_keys %}
   {% assign items = site.data.portfolios | where: "category", key %}
   {% if items.size > 0 %}
     <section class="mt-16">
       <h2 class="text-2xl font-bold tracking-tight text-gray-800 mb-8">{{ cat_titles[forloop.index0] }}</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {% for portfolio in items %}
-          <a href="{{ portfolio.link.href }}" class="group block">
-            <div class="relative aspect-video overflow-hidden rounded-lg mb-4">
-              <img
-                src="/assets/images/portfolios/{{ portfolio.thumbnail }}"
-                alt="{{ portfolio.name }}"
-                class="w-full h-full object-cover transition-transform group-hover:scale-105"
-              >
-            </div>
 
-            <h3 class="text-xl font-semibold mb-2">{{ portfolio.name }}</h3>
-            <p class="text-gray-600 mb-3">{{ portfolio.description }}</p>
+      {% if key == "mobile" %}
+        <details class="group">
+          <summary class="cursor-pointer text-gray-500 hover:text-gray-700 text-sm font-medium mb-6 select-none">
+            Show {{ items.size }} mobile projects →
+          </summary>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-4">
+      {% else %}
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {% endif %}
 
-            <div class="inline-flex items-center gap-2 text-sm text-gray-500">
-              {% if portfolio.link.label contains "Android" %}
-                {% assign icon_path = "/assets/images/icons/android.svg" %}
-              {% elsif portfolio.link.label == "React Native" %}
-                {% assign icon_path = "/assets/images/icons/react-native.svg" %}
-              {% elsif portfolio.link.label == "Flutter" %}
-                {% assign icon_path = "/assets/images/icons/flutter.svg" %}
-              {% elsif portfolio.link.label == "Next.js" %}
-                {% assign icon_path = "/assets/images/icons/nextjs.svg" %}
-              {% elsif portfolio.link.label == "Laravel Development" %}
-                {% assign icon_path = "/assets/images/icons/laravel.svg" %}
-              {% else %}
-                {% assign icon_path = "/assets/images/icons/chrome.svg" %}
-              {% endif %}
-              <img
-                src="{{ icon_path }}"
-                alt="{{ portfolio.link.label }}"
-                class="w-5 h-5"
-              >
-              {{ portfolio.link.label }}
-            </div>
-          </a>
-        {% endfor %}
-      </div>
+      {% for portfolio in items %}
+        <a href="{{ portfolio.link.href }}" class="group block">
+          <div class="relative aspect-video overflow-hidden rounded-lg mb-4">
+            <img
+              src="/assets/images/portfolios/{{ portfolio.thumbnail }}"
+              alt="{{ portfolio.name }}"
+              class="w-full h-full object-cover transition-transform group-hover:scale-105"
+            >
+          </div>
+
+          <h3 class="text-xl font-semibold mb-2">{{ portfolio.name }}</h3>
+          <p class="text-gray-600 mb-3">{{ portfolio.description }}</p>
+
+          <div class="inline-flex items-center gap-2 text-sm text-gray-500">
+            {% if portfolio.link.label contains "Android" %}
+              {% assign icon_path = "/assets/images/icons/android.svg" %}
+            {% elsif portfolio.link.label == "React Native" %}
+              {% assign icon_path = "/assets/images/icons/react-native.svg" %}
+            {% elsif portfolio.link.label == "Flutter" %}
+              {% assign icon_path = "/assets/images/icons/flutter.svg" %}
+            {% elsif portfolio.link.label == "Next.js" %}
+              {% assign icon_path = "/assets/images/icons/nextjs.svg" %}
+            {% elsif portfolio.link.label == "Laravel Development" %}
+              {% assign icon_path = "/assets/images/icons/laravel.svg" %}
+            {% else %}
+              {% assign icon_path = "/assets/images/icons/chrome.svg" %}
+            {% endif %}
+            <img
+              src="{{ icon_path }}"
+              alt="{{ portfolio.link.label }}"
+              class="w-5 h-5"
+            >
+            {{ portfolio.link.label }}
+          </div>
+        </a>
+      {% endfor %}
+
+      {% if key == "mobile" %}
+          </div>
+        </details>
+      {% else %}
+          </div>
+      {% endif %}
     </section>
   {% endif %}
 {% endfor %}
