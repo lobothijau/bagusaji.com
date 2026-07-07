@@ -4,17 +4,17 @@
   cta: Email Bagus to get started
   description: |
     Your customers customize your product in real-time 3D, directly on your website.
-    I handle everything — 3D rendering, UI, backend integration, and deployment.
+    I handle everything — 3D rendering, UI, pricing logic, e-commerce integration, and deployment.
     Flat-rate projects starting at $5K USD, delivered in 3–5 weeks.
   href: mailto:gusajisan@gmail.com
 
 - title: Frontend Engineering
-  best_if: you need fast, maintainable web applications built with React or Next.js.
-  you_get: a frontend developer to build or improve your web product from scratch.
+  best_if: you need fast, maintainable web applications shipped with React or Next.js.
+  you_get: a frontend developer who takes features from spec to production — no handoffs.
   cta: Email Bagus to get started
   description: |
-    React, Next.js, TypeScript. I build fast, maintainable web applications for
-    startups and SaaS companies. From marketing sites to full products.
+    React, Next.js, TypeScript. I ship fast, maintainable web applications for
+    startups and SaaS companies. From marketing sites to full products. Available for contract or long-term engagement.
   href: mailto:gusajisan@gmail.com
 
 - title: Mobile Development

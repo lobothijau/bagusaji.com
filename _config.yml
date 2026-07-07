@@ -1,7 +1,7 @@
 # Jekyll configuration
 url: https://bagusaji.com
 title: Bagus Aji Santoso
-description: Frontend engineer specializing in interactive 3D web experiences. I build product configurators and web applications with React, Next.js, and Three.js.
+description: Frontend engineer who ships interactive 3D product configurators end-to-end — from WebGL rendering to checkout integration. React, Next.js, Three.js.
 author:
   name: Bagus Aji Santoso
   email: bagus@bagusaji.com
