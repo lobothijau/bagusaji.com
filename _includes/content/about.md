@@ -6,4 +6,4 @@ Since mid-2024 I've been fully independent, delivering configurators for clients
 
 My stack is React, Next.js, Three.js, and React Three Fiber. I work across the full frontend — from WebGL shaders to deployment — but what I really do is ship products that move the needle for my clients' businesses.
 
-Open to remote and on-site roles.
+Open to remote and on-site roles anywhere in the world.
