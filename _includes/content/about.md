@@ -1,17 +1,9 @@
-I've been building on the web since 2015. Today my focus is interactive 3D configurators built with Three.js and React — the kind of web experience that helps companies sell products online in a way static images never could.
+I ship 3D product configurators that help companies sell online — end-to-end, from WebGL rendering to checkout integration. My work sits at the intersection of engineering and product: every configurator I deliver includes pricing logic, e-commerce hooks, and the kind of UX that turns browsers into buyers.
 
-## Codepolitan
+I've been writing code professionally since 2015. Before going independent, I taught programming at Codepolitan — writing a book and training hundreds of developers — then spent four years at Logique Digital Indonesia shipping applications for Japanese and multinational clients.
 
-My professional career started at Codepolitan, an Indonesian programming education company. I joined as a writer and editor, creating programming tutorials and editing community-submitted articles. When the company launched an Android training programme, I moved into a trainer role — teaching hundreds of developers and writing a programming book in the process.
+I build 3D product configurators for clients worldwide — vans, furniture, trailers, doors, basketball courts — each shipped in 3–5 weeks with live pricing and e-commerce integration. I'm also a frontend engineer at [ModernVet](https://modernvet.co), a veterinary platform serving clinics across Southeast Asia.
 
-## Logique
+My stack is React, Next.js, Three.js, and React Three Fiber. I work across the full frontend — from WebGL shaders to deployment — but what I really do is ship products that move the needle for my clients' businesses.
 
-After three years at Codepolitan, I joined Logique Digital Indonesia as a full-time mobile developer. Over four years I worked on applications for Japanese and multinational clients — projects that required close collaboration across cultures and tight engineering standards.
-
-## Independent
-
-Since mid-2024 I've been fully independent, working with clients worldwide on 3D web configurators and frontend engineering projects. Alongside that, I'm a developer at [ModernVet](https://modernvet.co), a veterinary platform serving clinics across Southeast Asia.
-
-I specialise in React, Next.js, Three.js, and React Three Fiber. I'm comfortable across the stack — from WebGL shaders to Express APIs — but the frontend is where I do my best work.
-
-I'm actively planning relocation to Kuala Lumpur, and I'm open to remote roles across the Asia-Pacific region.
+Open to remote and on-site roles anywhere in the world.
